@@ -239,6 +239,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ea64f928988e248884dacff40dbc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  creditAnimation: {fileID: 1385830538}
+  creditPanel: {fileID: 1385830542}
+  fadeDuration: 0.5
+  isPanelVisible: 0
 --- !u!1 &83769568
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +328,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5815437}
         m_TargetAssemblyTypeName: Canvas, Assembly-CSharp
-        m_MethodName: CreditGame
+        m_MethodName: ToggleCreditPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1277,6 +1281,7 @@ GameObject:
   - component: {fileID: 1385830539}
   - component: {fileID: 1385830541}
   - component: {fileID: 1385830540}
+  - component: {fileID: 1385830542}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -1302,7 +1307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -663.15, y: -0.000061035156}
+  m_AnchoredPosition: {x: -663.1501, y: -0.000061035156}
   m_SizeDelta: {x: -1408.67, y: -132.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1385830540
@@ -1345,6 +1350,18 @@ PlayableDirector:
     value: {fileID: 1385830540}
   m_ExposedReferences:
     m_References: []
+--- !u!225 &1385830542
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385830538}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1520197109
 GameObject:
   m_ObjectHideFlags: 0
