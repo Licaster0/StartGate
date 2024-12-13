@@ -6,17 +6,17 @@ using UnityEngine.TextCore.Text;
 
 public class Canvas : MonoBehaviour
 {
-    private void StartGame()
+    public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
-    
-    private void CreditGame()
+
+    public void CreditGame()
     {
 
     }
 
-    private void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
