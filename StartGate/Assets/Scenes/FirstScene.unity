@@ -169,8 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89101b12aa4e5594aad52ea6349e4dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brush: "l\u015Fkil\u011Fppi"
-  TMP_Text: {fileID: 882575676}
 --- !u!61 &69989233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -573,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 882575676}
+  memoryBookPrefab: {fileID: 5819067420106454192, guid: 1602001c9449e443398e30eac6166502, type: 3}
 --- !u!1 &447276037
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950a9bc3619e17147aa05bc916f674ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!4 &447276039
 Transform:
   m_ObjectHideFlags: 0
@@ -1247,8 +1247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9106c91856e764d828f8a7bbd9f850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medal: asdfadsf
-  TMP_Text: {fileID: 882575676}
 --- !u!58 &2094861247
 CircleCollider2D:
   m_ObjectHideFlags: 0
