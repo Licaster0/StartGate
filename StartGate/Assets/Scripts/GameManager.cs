@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    public PlayerMovement player;
     private void Awake()
     {
         if (Instance == null)
@@ -12,17 +14,17 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
         else
-        { 
-            Destroy(gameObject);    
+        {
+            Destroy(gameObject);
         }
     }
     void Start()
     {
-        
+
     }
-  
+
     void Update()
     {
-        
+
     }
 }
