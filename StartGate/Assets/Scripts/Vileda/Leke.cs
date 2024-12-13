@@ -30,6 +30,7 @@ public class Leke : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && isCollected)
         {
             Destroy(gameObject);
+            GameManager.Instance.text.text = "";
         }
     }
 }
