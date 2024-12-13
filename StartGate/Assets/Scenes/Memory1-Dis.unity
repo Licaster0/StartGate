@@ -311,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950a9bc3619e17147aa05bc916f674ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   text: {fileID: 522843625}
 --- !u!4 &351321236
 Transform:
@@ -1132,10 +1133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1458179164398388341, guid: 8713681159843544fb223c12cf6173bf, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 3525004633351483004, guid: 8713681159843544fb223c12cf6173bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0588771
@@ -1176,6 +1173,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4294935184348111688, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 522843625}
+    - target: {fileID: 4294935184348111688, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: memoryBookPrefab
+      value: 
+      objectReference: {fileID: 5819067420106454192, guid: 1602001c9449e443398e30eac6166502, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
