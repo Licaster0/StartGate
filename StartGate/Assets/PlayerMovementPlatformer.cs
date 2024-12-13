@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovementPlatformer : MonoBehaviour
@@ -9,7 +10,7 @@ public class PlayerMovementPlatformer : MonoBehaviour
     [SerializeField] private float jumpingPower;
     private bool isFacingRight = true;
     private float groundCheckRadius;
-
+    public TextMeshProUGUI promptText; // UI elemanýný burada referansla al
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -52,6 +53,23 @@ public class PlayerMovementPlatformer : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        // Eðer triggera giren nesne hedeflediðiniz oyuncu ise
+        if (col.CompareTag("Player"))
+        {
+            promptText.text = "Press E Key"; // UI öðesine metin atamasý
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        // Triggerdan çýkan nesne
+        if (col.CompareTag("Player"))
+        {
+            promptText.text = ""; // UI öðesindeki metni temizle
+        }
+    }
 
     private void OnDrawGizmos()
     {
