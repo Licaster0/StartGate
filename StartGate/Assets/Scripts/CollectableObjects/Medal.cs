@@ -2,11 +2,11 @@
 using TMPro;
 using UnityEngine;
 
-public class Medal : MonoBehaviour , ICollectable
+public class Medal : MonoBehaviour, ICollectable
 {
- 
+
     public void Collect()
     {
-       Debug.Log("a");
+        GameManager.Instance.text.text = "Bu madalyayı hiç haketmemiştim";
     }
 }

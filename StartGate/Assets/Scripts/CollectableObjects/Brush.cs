@@ -2,12 +2,12 @@
 using TMPro;
 using UnityEngine;
 
-public class Brush : MonoBehaviour , ICollectable
+public class Brush : MonoBehaviour, ICollectable
 {
-   
+
     public void Collect()
     {
-       Debug.Log("b");
+        GameManager.Instance.text.text = "Annecim burda seninde diş fırçan olurdu";
     }
 
 }
