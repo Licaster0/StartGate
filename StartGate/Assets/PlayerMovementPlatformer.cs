@@ -53,19 +53,28 @@ public class PlayerMovementPlatformer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // Eðer triggera giren nesne hedeflediðiniz oyuncu ise
-        if (col.CompareTag("Player"))
+        if (collision.CompareTag("Gate"))
         {
             promptText.text = "Press E Key"; // UI öðesine metin atamasý
         }
     }
-
-    private void OnTriggerExit2D(Collider2D col)
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Gate"))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log("deneme");
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
     {
         // Triggerdan çýkan nesne
-        if (col.CompareTag("Player"))
+        if (collision.CompareTag("Gate"))
         {
             promptText.text = ""; // UI öðesindeki metni temizle
         }
