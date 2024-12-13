@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Medal : MonoBehaviour, ICollectable
 {
-
+    public TMP_Text m_Text;
     public void Collect()
     {
-        GameManager.Instance.text.text = "Bu madalyayı hiç haketmemiştim";
+        m_Text.text = "Bu madalyayı hiç haketmemiştim";
     }
 }

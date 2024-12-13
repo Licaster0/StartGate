@@ -13,6 +13,7 @@ public class PlayerImpact : MonoBehaviour
         {
             currentCollectable = Icollectable;
             text.enabled = true;
+            text.text = "Press E Key";
         }
     }
 
