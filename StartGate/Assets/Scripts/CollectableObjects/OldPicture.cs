@@ -5,6 +5,6 @@ public class OldPicture : MonoBehaviour, ICollectable
 {
     public void Collect()
     {
-        Debug.Log("fasklþdfjþsalkf");   
+        Debug.Log("c");   
     }
 }
