@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class DragandADrop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool isselected;
 
     // Update is called once per frame
     void Update()
     {
+        if (isselected == true)
+        {
+            Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector2(cursorPos.x, cursorPos.y);
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            isselected = false;
+        }
         
+    }
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            isselected = true;
+        }
     }
 }
