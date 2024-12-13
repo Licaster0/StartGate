@@ -36,7 +36,7 @@ public class PlayerImpact : MonoBehaviour
         }
     }
 
-    private void CreateBook()
+    public void CreateBook()
     {
         GameObject memoryBook = Instantiate(memoryBookPrefab, transform.position, Quaternion.identity);
         memoryBook.GetComponent<MemoryBook>().Initialize(transform);
