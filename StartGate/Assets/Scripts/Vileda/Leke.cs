@@ -6,25 +6,30 @@ public class Leke : MonoBehaviour
 {
     [SerializeField] private Vileda vileda;
 
-    private void OnTriggerStay2D(Collider2D other)
+    private bool isCollected = false;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("X.");
-            if (Input.GetKeyDown(KeyCode.E))
+            if (vileda.collectedPartsCount == vileda.parts.Length)
             {
-                Debug.Log("Y.");
-                if (vileda.collectedPartsCount == vileda.parts.Length)
-                {
-                    Debug.Log("Z.");
-                    gameObject.SetActive(false);
-                    GameManager.Instance.text.text = "Stain cleaned!";
-                }
-                else
-                {
-                    GameManager.Instance.text.text = "You need to collect all parts to clean the stain.";
-                }
+                isCollected = true;
+                GameManager.Instance.text.text = "Press E to pick up this part.";
             }
+            else
+            {
+                isCollected = false;
+                GameManager.Instance.text.text = "You need to collect all parts first.";
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && isCollected)
+        {
+            Destroy(gameObject);
         }
     }
 }
