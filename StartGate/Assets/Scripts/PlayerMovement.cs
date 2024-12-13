@@ -8,17 +8,24 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private float moveSpeed = 3;
 
+    private void Start()
+    {
+        rb =this.gameObject.GetComponent<Rigidbody2D>();
+
+    }
     private void Update()
     {
-        // Inputlarý alýyoruz (Horizontal ve Vertical)
+        Move();
+    }
+    private void Move()
+    {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        rb = gameObject.GetComponent<Rigidbody2D>(); 
-        // Hareket vektörünü normalize ediyoruz
+
         Vector2 normalizedMovement = movement.normalized;
 
-        // Rigidbody ile hareket
         rb.MovePosition(rb.position + normalizedMovement * moveSpeed * Time.fixedDeltaTime);
+
     }
 
 }
