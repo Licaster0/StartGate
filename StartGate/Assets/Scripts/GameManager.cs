@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public PlayerMovement player;
     public TextMeshProUGUI text;
     private void Awake()
     {
@@ -19,13 +21,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void Start()
+    public IEnumerator ChangeScene(int sceneIndex)
     {
-
-    }
-
-    void Update()
-    {
-
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene(sceneIndex);
     }
 }

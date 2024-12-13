@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Leke : MonoBehaviour
 {
     [SerializeField] private Vileda vileda;
@@ -29,6 +29,7 @@ public class Leke : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isCollected)
         {
+            GameManager.Instance.StartCoroutine(GameManager.Instance.ChangeScene(1));
             Destroy(gameObject);
             GameManager.Instance.text.text = "";
         }
