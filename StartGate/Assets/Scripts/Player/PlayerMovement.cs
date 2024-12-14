@@ -13,8 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AnimatonController animator;
     private Vector3 originalScale;
 
-    [SerializeField] public AudioSource FootSteepss;
-    [SerializeField] public AudioClip footstep;
     private void Start()
     {
         originalScale = transform.localScale;
@@ -22,10 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void FootSteeps()
-    {
-        FootSteepss.PlayOneShot(footstep); // Footstep sesini bir kez çal
-    }
+    
     private void Update()
     {
         Move();
