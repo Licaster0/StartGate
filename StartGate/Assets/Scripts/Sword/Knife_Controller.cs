@@ -58,6 +58,7 @@ public class Knife_Controller : MonoBehaviour
 
     private void StuckInto(Collider2D collision)
     {
+        /*
         if (!spinWasTriggered)
         {
             spinWasTriggered = true;
@@ -71,6 +72,11 @@ public class Knife_Controller : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
         transform.parent = collision.transform;
+        */
+    }
+    private void OnBecameVisible()
+    {
+        Destroy(gameObject, 0.5f);
     }
 
 }
