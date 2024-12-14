@@ -282,6 +282,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &211920677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 211920678}
+  m_Layer: 0
+  m_Name: "Sap\u0131Transform"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &211920678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211920677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.09, y: 0.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2067810353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351321234
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vileda: {fileID: 1062193952}
+  viledaTransform: {fileID: 1965032144}
 --- !u!61 &889750694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -527,7 +559,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005625248, y: 0.020569086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -538,7 +570,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.1812801, y: 1.4113784}
   m_EdgeRadius: 0
 --- !u!212 &889750695
 SpriteRenderer:
@@ -601,8 +633,8 @@ Transform:
   m_GameObject: {fileID: 889750692}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.56, y: -3.1011, z: 0}
-  m_LocalScale: {x: 1, y: 0.5469558, z: 1}
+  m_LocalPosition: {x: 8.06, y: -3.26, z: 0}
+  m_LocalScale: {x: 1, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1062193953}
@@ -794,13 +826,13 @@ Transform:
   m_GameObject: {fileID: 1062193951}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.72, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2141982784}
-  - {fileID: 1704661952}
   - {fileID: 889750696}
+  - {fileID: 1704661952}
+  - {fileID: 2141982784}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177192341
@@ -1144,7 +1176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1620838366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1235,6 +1267,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620838365}
   m_CullTransparentMesh: 1
+--- !u!1 &1659452321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1659452322}
+  m_Layer: 0
+  m_Name: "U\xE7Transform"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1659452322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659452321}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.246, y: -3.083, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2067810353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1704661951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1326,7 @@ Transform:
   m_GameObject: {fileID: 1704661951}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.43, y: -3.19, z: 0}
+  m_LocalPosition: {x: 10.61, y: -2.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1327,6 +1390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vileda: {fileID: 1062193952}
+  viledaTransform: {fileID: 1659452322}
 --- !u!212 &1704661955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1367,7 +1431,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 45df1bc71376b4de38d74069d13fe45d, type: 3}
   m_Color: {r: 0.8113208, g: 0.7580226, b: 0.25640798, a: 1}
   m_FlipX: 0
@@ -1379,6 +1443,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1965032143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965032144}
+  m_Layer: 0
+  m_Name: KovaTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1965032144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965032143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.25, y: -2.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2067810353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2067810344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,7 +1536,16 @@ PrefabInstance:
       objectReference: {fileID: 5819067420106454192, guid: 1602001c9449e443398e30eac6166502, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3525004633351483004, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1965032144}
+    - targetCorrespondingSourceObject: {fileID: 3525004633351483004, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1659452322}
+    - targetCorrespondingSourceObject: {fileID: 3525004633351483004, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 211920678}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8713681159843544fb223c12cf6173bf, type: 3}
 --- !u!114 &2067810345 stripped
@@ -1455,6 +1559,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de083d12d56f0b488ca150d55c48920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2067810353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3525004633351483004, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+  m_PrefabInstance: {fileID: 2067810344}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2141982782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,7 +1623,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5b26b69c15d14492690deb294d782952, type: 3}
   m_Color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
   m_FlipX: 0
@@ -1535,7 +1644,7 @@ Transform:
   m_GameObject: {fileID: 2141982782}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.46, y: -1.6, z: 0}
+  m_LocalPosition: {x: 2.23, y: -2.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1573,7 +1682,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.036700964, y: -0.16031653}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1584,7 +1693,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0450449, y: 1.320633}
   m_EdgeRadius: 0
 --- !u!114 &2141982786
 MonoBehaviour:
@@ -1599,6 +1708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vileda: {fileID: 1062193952}
+  viledaTransform: {fileID: 211920678}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

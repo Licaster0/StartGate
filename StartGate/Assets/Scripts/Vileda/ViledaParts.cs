@@ -7,6 +7,8 @@ public class ViledaParts : MonoBehaviour
     private bool isCollected = false; // Bu parçanın toplanıp toplanmadığını kontrol eder
     public Vileda vileda; // Bağlı olduğu Vileda scriptine referans
 
+    [SerializeField] private Transform viledaTransform;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !isCollected)
@@ -53,8 +55,9 @@ public class ViledaParts : MonoBehaviour
     {
         if (isCollected) return; // Eğer zaten toplandıysa işlemi durdur
 
+        transform.position = viledaTransform.position; // Parçayı Vileda'nın pozisyonuna taşı
+        transform.SetParent(viledaTransform); // Parçayı Vileda'nın alt objesi yap
         isCollected = true; // Sadece bu parçanın toplandığını işaretle
-        gameObject.SetActive(false); // Parçayı sahneden kaldır
 
         // Vileda scriptine bu parçanın toplandığını bildir
         if (vileda != null)

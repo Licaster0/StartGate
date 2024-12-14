@@ -473,6 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 5819067420106454192, guid: 1602001c9449e443398e30eac6166502, type: 3}
   target: {fileID: 424171583}
+  x: 0
 --- !u!1 &1313080491
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +693,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1088305888}
         m_TargetAssemblyTypeName: Scene4CanvasScript, Assembly-CSharp
-        m_MethodName: MemoryBook
+        m_MethodName: CreateBook
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -870,6 +871,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1731033528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1652748597021736341, guid: 2a6a91b704347394ca4ad6f9fa58b71a, type: 3}
+  m_PrefabInstance: {fileID: 9214993021664137420}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1731033535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731033528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bbd601e0f3da5a4290441ce25f17207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1002531137}
+  memoryBookPrefab: {fileID: 5819067420106454192, guid: 1602001c9449e443398e30eac6166502, type: 3}
 --- !u!1 &1735996527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1155,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1652748597021736341, guid: 2a6a91b704347394ca4ad6f9fa58b71a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731033535}
   m_SourcePrefab: {fileID: 100100000, guid: 2a6a91b704347394ca4ad6f9fa58b71a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

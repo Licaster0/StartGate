@@ -14,10 +14,10 @@ public class Scene4CanvasScript : MonoBehaviour
 
     private void Start()
     {
-        // Bu objedeki SpriteRenderer bileþenini al
+        // Bu objedeki SpriteRenderer bileÅŸenini al
         spriteImage = GameObject.Find("Test").GetComponent<Image>();
 
-        // Baþlangýçta switch kapalý görünümüyle baþla
+        // BaÅŸlangÄ±Ã§ta switch kapalÄ± gÃ¶rÃ¼nÃ¼mÃ¼yle baÅŸla
         if (spriteImage != null && switchOffSprite != null)
         {
             spriteImage.sprite = switchOffSprite;
@@ -28,10 +28,10 @@ public class Scene4CanvasScript : MonoBehaviour
     {
         if (spawnedBook == null)
         {
-            // Kitap objesi oluþturuluyor
+            // Kitap objesi oluÅŸturuluyor
             spawnedBook = Instantiate(bookPrefab, target.position, target.rotation);
 
-            // Sprite'i "açýk" hale getir
+            // Sprite'i "aÃ§Ä±k" hale getir
             if (spriteImage != null && switchOnSprite != null)
             {
                 spriteImage.sprite = switchOnSprite;
@@ -43,7 +43,7 @@ public class Scene4CanvasScript : MonoBehaviour
             Destroy(spawnedBook);
             spawnedBook = null;
 
-            // Sprite'i "kapalý" hale getir
+            // Sprite'i "kapalÄ±" hale getir
             if (spriteImage != null && switchOffSprite != null)
             {
                 spriteImage.sprite = switchOffSprite;
