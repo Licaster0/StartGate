@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +13,7 @@ public class DragandADrop : MonoBehaviour
         {
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector2(cursorPos.x, cursorPos.y);
+            Debug.Log("başarıl");
         }
         if (Input.GetMouseButtonUp(0))
         {
