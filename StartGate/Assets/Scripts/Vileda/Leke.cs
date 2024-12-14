@@ -4,45 +4,28 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Leke : MonoBehaviour
 {
-    [SerializeField] private Vileda vileda;
-    [SerializeField] private ParticleSystem freshFx;
-
-    private bool isCollected = false;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    [SerializeField] private int currentPaper = 0;
+    [SerializeField] private int scenePaperCount;
+    [SerializeField] private bool canFinish;
+    private void Start()
     {
-        if (other.CompareTag("Player"))
+        canFinish = false;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Leke"))
         {
-            if (vileda.collectedPartsCount == vileda.parts.Length)
+            collision.gameObject.SetActive(false);
+            currentPaper++;
+            if (currentPaper == scenePaperCount)
             {
-                isCollected = true;
-                GameManager.Instance.text.text = "Press E to pick up this part.";
+                canFinish = true;
             }
-            else
-            {
-                isCollected = false;
-                GameManager.Instance.text.text = "You need to collect all parts first.";
-            }
+        }
+        if (canFinish)
+        {
+            SceneManager.LoadScene(2);
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && isCollected)
-        {
-            freshFx.Play();
-            PlayerReferences();
-            GameManager.Instance.StartCoroutine(GameManager.Instance.ChangeScene(1));
-            Destroy(gameObject);
-            GameManager.Instance.text.text = "";
-        }
-    }
-
-    private void PlayerReferences()
-    {
-        PlayerImpact playerImpact = GameManager.Instance.player.GetComponent<PlayerImpact>();
-        playerImpact.CreateBook();
-    }
-
-    
 }

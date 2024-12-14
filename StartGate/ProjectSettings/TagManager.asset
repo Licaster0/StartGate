@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Gate
-  - Lava
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -13,14 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Player
-  - Knife
-<<<<<<< HEAD
-  - Hook
-=======
-  - Lava
->>>>>>> c9180e56db5a5b5971169d62ce1abf05bae4d67c
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
