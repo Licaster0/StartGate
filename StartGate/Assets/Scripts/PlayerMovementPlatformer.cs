@@ -173,49 +173,49 @@ public class PlayerMovementPlatformer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Gate"))
-        {
-            promptText.text = "Press E Key"; // UI öðesine metin atamasý
-        }
-        else
-        {
-            Debug.Log("Gate deðil");
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Gate"))
+    //    {
+    //        promptText.text = "Press E Key"; // UI öðesine metin atamasý
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Gate deðil");
+    //    }
+    //}
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Gate"))
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("deneme");
-            }
-        }
-        else
-        {
-            Debug.Log("Gate deðil");
-        }
-    }
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Gate"))
+    //    {
+    //        if (Input.GetKeyDown(KeyCode.E))
+    //        {
+    //            Debug.Log("deneme");
+    //        }
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Gate deðil");
+    //    }
+    //}
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Gate"))
-        {
-            promptText.text = ""; // UI öðesindeki metni temizle
-        }
-        else
-        {
-            Debug.Log("Gate deðil");
-        }
-    }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Gate"))
+    //    {
+    //        promptText.text = ""; // UI öðesindeki metni temizle
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Gate deðil");
+    //    }
+    //}
 
-    // Yer kontrolü için çizim
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-    }
+    //// Yer kontrolü için çizim
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    //}
 }
