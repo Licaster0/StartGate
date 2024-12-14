@@ -52,6 +52,6 @@ public class LekeParts : MonoBehaviour
         CreateBook();
         Debug.Log("Tüm lekeler temizlendi, sahne değiştiriliyor...");
         yield return new WaitForSeconds(2f); // 2 saniye bekle
-        SceneManager.LoadScene(1); // 1 numaralı sahneyi yükle (numara veya isim verilebilir)
+        SceneManager.LoadScene(2); // 1 numaralı sahneyi yükle (numara veya isim verilebilir)
     }
 }
