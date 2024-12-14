@@ -1097,7 +1097,7 @@ GameObject:
   - component: {fileID: 143743503}
   m_Layer: 0
   m_Name: Leke (5)
-  m_TagString: Untagged
+  m_TagString: Leke
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1114,8 +1114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vileda: {fileID: 1062193952}
-  freshFx: {fileID: 2065404065}
+  currentPaper: 0
+  scenePaperCount: 0
+  canFinish: 0
 --- !u!61 &143743504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1273,6 +1274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 194354116}
+  - component: {fileID: 194354117}
   m_Layer: 0
   m_Name: Lekeler
   m_TagString: Untagged
@@ -1301,6 +1303,20 @@ Transform:
   - {fileID: 143743506}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194354117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194354115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ed88b791f984f14a07558ef04c42ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts: []
+  collectedPartsCount: 0
 --- !u!1 &211920677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,13 +1341,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211920677}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.7, y: 0.71, z: 0}
+  m_LocalRotation: {x: -0, y: 0, z: -0.078201905, w: 0.9969376}
+  m_LocalPosition: {x: 2.565, y: 1.3329997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2067810353}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.97}
 --- !u!1 &218167909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,7 +2378,7 @@ GameObject:
   - component: {fileID: 356437830}
   m_Layer: 0
   m_Name: Leke (3)
-  m_TagString: Untagged
+  m_TagString: Leke
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2379,8 +2395,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vileda: {fileID: 1062193952}
-  freshFx: {fileID: 2065404065}
+  currentPaper: 0
+  scenePaperCount: 0
+  canFinish: 0
 --- !u!61 &356437831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5691,7 +5708,7 @@ Transform:
   m_GameObject: {fileID: 889750692}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.403877, y: -2.745, z: 0}
+  m_LocalPosition: {x: -1.53, y: -2.06, z: 0}
   m_LocalScale: {x: 1, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6133,7 +6150,7 @@ GameObject:
   - component: {fileID: 981825500}
   m_Layer: 0
   m_Name: Leke
-  m_TagString: Untagged
+  m_TagString: Leke
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6244,7 +6261,7 @@ Transform:
   m_GameObject: {fileID: 981825496}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.619999, y: 0.07999992, z: 0}
+  m_LocalPosition: {x: 28.46, y: 0.07999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6262,8 +6279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vileda: {fileID: 1062193952}
-  freshFx: {fileID: 2065404065}
+  currentPaper: 0
+  scenePaperCount: 0
+  canFinish: 0
 --- !u!1 &986038619
 GameObject:
   m_ObjectHideFlags: 0
@@ -8016,7 +8034,7 @@ GameObject:
   - component: {fileID: 1226530340}
   m_Layer: 0
   m_Name: Leke (1)
-  m_TagString: Untagged
+  m_TagString: Leke
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8033,8 +8051,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vileda: {fileID: 1062193952}
-  freshFx: {fileID: 2065404065}
+  currentPaper: 0
+  scenePaperCount: 0
+  canFinish: 0
 --- !u!61 &1226530341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8583,7 +8602,7 @@ GameObject:
   - component: {fileID: 1272462461}
   m_Layer: 0
   m_Name: Leke (2)
-  m_TagString: Untagged
+  m_TagString: Leke
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8600,8 +8619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vileda: {fileID: 1062193952}
-  freshFx: {fileID: 2065404065}
+  currentPaper: 0
+  scenePaperCount: 0
+  canFinish: 0
 --- !u!61 &1272462462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8708,7 +8728,7 @@ Transform:
   m_GameObject: {fileID: 1272462460}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.61, y: 0.07999992, z: 0}
+  m_LocalPosition: {x: 22.21, y: 0.07999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11037,7 +11057,7 @@ Transform:
   m_GameObject: {fileID: 1659452321}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.181, y: -3.153, z: 0}
+  m_LocalPosition: {x: 2.4, y: -2.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11154,8 +11174,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704661951}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.21643952, w: 0.97629607}
-  m_LocalPosition: {x: 6.869377, y: -3.4264998, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.7, y: -2.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11454,7 +11474,7 @@ GameObject:
   - component: {fileID: 1737770552}
   m_Layer: 0
   m_Name: Leke (4)
-  m_TagString: Untagged
+  m_TagString: Leke
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11471,8 +11491,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vileda: {fileID: 1062193952}
-  freshFx: {fileID: 2065404065}
+  currentPaper: 0
+  scenePaperCount: 0
+  canFinish: 0
 --- !u!61 &1737770553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12714,7 +12735,7 @@ Transform:
   m_GameObject: {fileID: 1965032143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.25, y: -1.79, z: 0}
+  m_LocalPosition: {x: 2.85, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18691,8 +18712,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141982782}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.18776537, w: 0.9822139}
-  m_LocalPosition: {x: 7.6288767, y: -1.495, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.48, y: -1.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
