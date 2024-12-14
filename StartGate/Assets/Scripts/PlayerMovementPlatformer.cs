@@ -10,7 +10,9 @@ public class PlayerMovementPlatformer : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpingPower;
     private bool isFacingRight = true;
+    private Vector3 startPosition; // Oyuncunun baþlangýç pozisyonu
     private float groundCheckRadius;
+    private SpriteRenderer spriteRenderer; // Görünmezlik için SpriteRenderer
     public TextMeshProUGUI promptText; // UI elemanýný burada referansla al
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -21,6 +23,8 @@ public class PlayerMovementPlatformer : MonoBehaviour
 
     void Start()
     {
+        startPosition = transform.position;
+        spriteRenderer = GetComponent<SpriteRenderer>();    
         // Animator'ý almak
         animator = GetComponent<Animator>();
     }
@@ -42,7 +46,13 @@ public class PlayerMovementPlatformer : MonoBehaviour
 
         Flip();
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Lava"))
+        {
+            ResetPosition();
+        }
+    }
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -52,7 +62,84 @@ public class PlayerMovementPlatformer : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
+    void ResetPosition()
+    {
+        StartCoroutine(SmoothResetPosition());
+    }
+    private IEnumerator SmoothResetPosition()
+    {
+        // 1. Küçülerek görünmez olma
+        float shrinkDuration = 0.5f; // Küçülme süresi
+        float elapsed = 0f;
 
+        Vector3 originalScale = transform.localScale;
+
+        // Rigidbody hýzýný sýfýrla
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        while (elapsed < shrinkDuration)
+        {
+            float t = elapsed / shrinkDuration;
+            transform.localScale = Vector3.Lerp(originalScale, Vector3.zero, t); // Küçülme
+            spriteRenderer.color = new Color(1, 1, 1, 1 - t); // Görünmez olma
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.localScale = Vector3.zero; // Tamamen küçül
+        spriteRenderer.color = new Color(1, 1, 1, 0); // Tamamen görünmez
+
+        // Pozisyonu baþlangýç pozisyonuna sýfýrla
+        transform.position = startPosition;
+
+        // 2. Yavaþça büyüyerek görünür olma
+        float growDuration = 0.5f; // Büyüme süresi
+        elapsed = 0f;
+
+        while (elapsed < growDuration)
+        {
+            float t = elapsed / growDuration;
+            transform.localScale = Vector3.Lerp(Vector3.zero, originalScale, t); // Büyüme
+            spriteRenderer.color = new Color(1, 1, 1, t); // Görünür olma
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.localScale = originalScale; // Orijinal boyut
+        spriteRenderer.color = new Color(1, 1, 1, 1); // Tamamen görünür
+
+
+    }
+    /*
+    private IEnumerator SmoothResetPosition()
+    {
+        float duration = 1f;
+        float elapsed = 0f;
+        Vector3 currentPosition = transform.position;
+        Vector3 originalScale = transform.localScale;
+
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        while (elapsed < duration)
+        {
+            transform.position = Vector3.Lerp(currentPosition, startPosition, elapsed / duration);
+            transform.localScale = Vector3.Lerp(originalScale, originalScale * 0.5f, elapsed / duration); // Küçült
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = startPosition;
+        transform.localScale = originalScale; // Orijinal boyutuna dön
+    }
+    */
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)

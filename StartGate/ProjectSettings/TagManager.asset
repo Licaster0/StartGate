@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Gate
+  - Lava
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,11 @@ TagManager:
   - Ground
   - Player
   - Knife
-  - 
+<<<<<<< HEAD
+  - Hook
+=======
+  - Lava
+>>>>>>> c9180e56db5a5b5971169d62ce1abf05bae4d67c
   - 
   - 
   - 
