@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class PlayerMovementPlatformer : MonoBehaviour
@@ -15,8 +16,18 @@ public class PlayerMovementPlatformer : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    // Animator referansý
+    private Animator animator;
+
+    void Start()
+    {
+        // Animator'ý almak
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
+        animator.SetFloat("speed", Vector2.ClampMagnitude(rb.velocity, 1).magnitude);
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -55,12 +66,12 @@ public class PlayerMovementPlatformer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Eðer triggera giren nesne hedeflediðiniz oyuncu ise
         if (collision.CompareTag("Gate"))
         {
             promptText.text = "Press E Key"; // UI öðesine metin atamasý
         }
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Gate"))
@@ -71,18 +82,18 @@ public class PlayerMovementPlatformer : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        // Triggerdan çýkan nesne
         if (collision.CompareTag("Gate"))
         {
             promptText.text = ""; // UI öðesindeki metni temizle
         }
     }
 
+    // Yer kontrolü için çizim
     private void OnDrawGizmos()
     {
-        // Yer kontrolü için çizim
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
