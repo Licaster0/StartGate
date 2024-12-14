@@ -5,47 +5,57 @@ using UnityEngine;
 public class TypingEffect : MonoBehaviour
 {
     [Header("Text Ayarlarý")]
-    public TextMeshProUGUI textComponent; // UI TextMeshPro objesi
-    [TextArea]
-    public string fullText; // Yazdýrýlacak tam metin
-    public float typingSpeed = 0.05f; // Harfler arasý gecikme süresi
+    public TextMeshProUGUI textComponent; // UI TextMeshPro Text
+    public string[] dialogues; // Diyaloglarýn listesi
+    public float typingSpeed = 0.05f; // Daktilo yazma hýzý
 
     [Header("Ses Ayarlarý")]
-    public AudioSource audioSource; // Ses kaynaðý
+    public AudioSource audioSource; // Daktilo sesi için AudioSource
     public AudioClip typingSound; // Daktilo sesi
-    [Range(0f, 1f)] public float soundVolume = 0.3f; // Ses seviyesi (0.0 - 1.0)
+    [Range(0f, 1f)] public float soundVolume = 0.3f; // Ses seviyesi
 
-    private Coroutine typingCoroutine;
+    private int dialogueIndex = 0; // Þu anki diyalog indeksi
+    private bool isTyping = false; // Yazma iþlemi kontrolü
 
     void Start()
     {
-        StartTypingEffect();
+        textComponent.text = ""; // Ýlk baþta boþ býrak
     }
-    public void StartTypingEffect()
+
+    void Update()
     {
-        // Önceki yazdýrma iþlemini iptal et (eðer varsa)
-        if (typingCoroutine != null)
-            StopCoroutine(typingCoroutine);
-
-        // Text'i sýfýrla
-        textComponent.text = "";
-
-        // Yazdýrma Coroutine'ini baþlat
-        typingCoroutine = StartCoroutine(TypeText());
+        // E tuþuna basýldýðýnda bir sonraki diyalogu göster
+        if (Input.GetKeyDown(KeyCode.E) && !isTyping)
+        {
+            if (dialogueIndex < dialogues.Length)
+            {
+                StartCoroutine(TypeDialogue(dialogues[dialogueIndex]));
+                dialogueIndex++;
+            }
+            else
+            {
+                textComponent.text = ""; // Diyaloglar bittiðinde text'i temizle
+            }
+        }
     }
-    private IEnumerator TypeText()
+    private IEnumerator TypeDialogue(string dialogue)
     {
-        foreach (char letter in fullText.ToCharArray())
+        isTyping = true; // Yazma iþlemi baþladý
+        textComponent.text = ""; // Text'i temizle
+
+        foreach (char letter in dialogue.ToCharArray())
         {
             textComponent.text += letter; // Harfi ekle
 
             // Daktilo sesi çal
             if (typingSound != null && audioSource != null)
             {
-                audioSource.PlayOneShot(typingSound, soundVolume); // Ses seviyesini uygula
+                audioSource.PlayOneShot(typingSound, soundVolume);
             }
 
-            yield return new WaitForSeconds(typingSpeed); // Harf arasý gecikme
+            yield return new WaitForSeconds(typingSpeed); // Gecikme süresi
         }
+
+        isTyping = false; // Yazma iþlemi bitti
     }
 }
