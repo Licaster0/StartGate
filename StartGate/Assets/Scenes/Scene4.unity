@@ -473,6 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 5819067420106454192, guid: 1602001c9449e443398e30eac6166502, type: 3}
   target: {fileID: 424171583}
+  x: 0
 --- !u!1 &1313080491
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +693,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1088305888}
         m_TargetAssemblyTypeName: Scene4CanvasScript, Assembly-CSharp
-        m_MethodName: MemoryBook
+        m_MethodName: CreateBook
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -6,12 +6,16 @@ public class Scene4CanvasScript : MonoBehaviour
 {
     [SerializeField] GameObject book;
     [SerializeField] Transform target;
-    public void MemoryBook()
+
+    public int x = 0;
+    public void CreateBook()
     {
-        if (book != null && target != null)
+        if (x < 1)
         {
-            Instantiate(book, target.position, target.rotation);
+            GameObject memoryBook = Instantiate(book, target.position, Quaternion.identity);
+            memoryBook.GetComponent<MemoryBook>().Initialize(transform);
         }
+        x++;
     }
 
 }
