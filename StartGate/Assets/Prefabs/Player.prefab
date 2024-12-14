@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4339513108527545903}
   - component: {fileID: 6537501886028201084}
   - component: {fileID: 5780961295875499277}
+  - component: {fileID: 2021505025454561588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -134,7 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dustFx: {fileID: 0}
   moveSpeed: 5
-  Ses: 1
   animator: {fileID: 1657298406379276495}
 --- !u!114 &4294935184348111688
 MonoBehaviour:
@@ -364,3 +364,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2021505025454561588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458179164398388341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d1c42cbfa808f40904632efc05aa15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 0}
+  dialogues:
+  - Benim adim Zumra.
+  - Annem bana ananesinin ismini vermis.
+  - Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
+  - Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
+  - Bugune kadar cok guzel bir hayatim olmadi ve bunda benim payim var.
+  - Bir katil veya hirsiz degilim,
+  - Ama gecmisim beni urkutecek derece karanlik...
+  - Ama gecmisim beni urkutecek derece karanlik...
+  - Bu sucluluk duygusunu ustumden atamiyorum, Allah kahretsin!
+  - Belki bir yolu vardi,
+  - Belki icimde bulundugum karanliktan cikmam icin bir kapiyi acmam yeterliydi,
+    kim bilir...
+  - Bazen uyuyamadigim gecelerin sabahi balkona cikiyorum.
+  - Bir yavru kusu ve annesini oterken goruyorum.
+  - Bu benim icin azaplarin en buyugu oluveriyor birden.
+  - Keske, anne, senin istedigin gibi biri olabilseydim.
+  - Eski sevgilim, keske sana gereken vakti ve ilgiyi verebilseydim.
+  - 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak yenmeseydim.
+  - 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak yenmeseydim.
+  - "Keske, keske, keske\u2026"
+  - Ama belki bir yolu hala vardir?
+  typingSpeed: 0.09
+  audioSource: {fileID: 0}
+  typingSound: {fileID: 8300000, guid: 0ad46db4f6ae56f4a9bb4a8f35043c56, type: 3}
+  soundVolume: 0.2

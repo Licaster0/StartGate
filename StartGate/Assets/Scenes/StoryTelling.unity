@@ -307,12 +307,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743284297}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1782521694}
+  m_Father: {fileID: 2007909707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.5622641, g: 0.5622641, b: 0.5622641, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -366,8 +366,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 38.26
+  m_fontSizeBase: 38.26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -415,6 +415,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743284297}
+  m_CullTransparentMesh: 1
+--- !u!1 &1256919616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256919617}
+  - component: {fileID: 1256919619}
+  - component: {fileID: 1256919618}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1256919617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256919616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1834626985}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -486.85864, y: 0}
+  m_SizeDelta: {x: -1042.926, y: -72.2221}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1256919618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256919616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1256919619
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256919616}
   m_CullTransparentMesh: 1
 --- !u!1 &1732328039
 GameObject:
@@ -620,8 +695,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 743284298}
   - {fileID: 1732328040}
+  - {fileID: 1834626985}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -629,6 +704,159 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1834626984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1834626985}
+  - component: {fileID: 1834626987}
+  - component: {fileID: 1834626986}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1834626985
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834626984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1256919617}
+  - {fileID: 2007909707}
+  m_Father: {fileID: 1782521694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -330}
+  m_SizeDelta: {x: -660.1987, y: -781.4598}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1834626986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834626984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1834626987
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834626984}
+  m_CullTransparentMesh: 1
+--- !u!1 &2007909706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2007909707}
+  - component: {fileID: 2007909709}
+  - component: {fileID: 2007909708}
+  m_Layer: 5
+  m_Name: Panel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2007909707
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007909706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 743284298}
+  m_Father: {fileID: 1834626985}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 135.2262, y: 0}
+  m_SizeDelta: {x: -360.4736, y: -72.2221}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2007909708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007909706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2007909709
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007909706}
+  m_CullTransparentMesh: 1
 --- !u!1001 &8547450896638504998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -645,6 +873,93 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 743284299}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[0]
+      value: Benim adim Zumra.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[1]
+      value: Annem bana ananesinin ismini vermis.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[2]
+      value: Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[3]
+      value: Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[4]
+      value: Bugune kadar cok guzel bir hayatim olmadi ve bunda benim payim var.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[5]
+      value: Bir katil veya hirsiz degilim,
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[6]
+      value: Ama gecmisim beni urkutecek derece karanlik...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[7]
+      value: Ama gecmisim beni urkutecek derece karanlik...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[8]
+      value: Bu sucluluk duygusunu ustumden atamiyorum, Allah kahretsin!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[9]
+      value: Belki bir yolu vardi,
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[10]
+      value: Belki icimde bulundugum karanliktan cikmam icin bir kapiyi acmam yeterliydi,
+        kim bilir...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[11]
+      value: Bazen uyuyamadigim gecelerin sabahi balkona cikiyorum.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[12]
+      value: Bir yavru kusu ve annesini oterken goruyorum.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[13]
+      value: Bu benim icin azaplarin en buyugu oluveriyor birden.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[14]
+      value: Keske, anne, senin istedigin gibi biri olabilseydim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[15]
+      value: Eski sevgilim, keske sana gereken vakti ve ilgiyi verebilseydim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[16]
+      value: 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak
+        yenmeseydim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[17]
+      value: 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak
+        yenmeseydim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[18]
+      value: "Keske, keske, keske\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[19]
+      value: Ama belki bir yolu hala vardir?
+      objectReference: {fileID: 0}
     - target: {fileID: 6798685980529600845, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
