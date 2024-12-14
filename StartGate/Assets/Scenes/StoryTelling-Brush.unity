@@ -414,10 +414,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\u0130\u015E\u0130\u015E\u0130\u015E\u0130\u015E\u0130\u015E\u0130\u015E\u0130\u015E\u0130"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d2349c6bc0df646b9afd1f0f028c8011, type: 2}
+  m_sharedMaterial: {fileID: 6027494335596849595, guid: d2349c6bc0df646b9afd1f0f028c8011, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
