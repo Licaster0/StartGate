@@ -13,7 +13,8 @@ public class MemoryBook : MonoBehaviour
 
     public void Initialize(Transform playerTransform)
     {
-        player = playerTransform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerTransform = player;
         StartCoroutine(MoveAndPullPlayer());
     }
 
