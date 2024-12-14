@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public PlayerMovement player;
+    public UI_FadeScreen fadeScreen;
     public TextMeshProUGUI text;
     private void Awake()
     {

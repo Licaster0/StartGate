@@ -32,6 +32,7 @@ public class PlayerImpact : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.E) && currentCollectable != null)
         {
             currentCollectable.Collect();
+            GameManager.Instance.fadeScreen.FadeOut();
             CreateBook();
         }
     }
