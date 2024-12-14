@@ -18,15 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Memory1-Dis.unity
     guid: 8b4343bc434c1436cb63823759712059
   - enabled: 1
+    path: Assets/Scenes/StoryTellingMadalyon.unity
+    guid: 6b4efb3f9e25a0447b11a24c73987e8d
+  - enabled: 1
     path: Assets/Scenes/Memory2-Medal.unity
     guid: 33b4c72608774ca4ebc6244ef7f82868
-  - enabled: 1
-    path: Assets/Scenes/Memory3-Ex.unity
-    guid: b485b1f9b7830f84b8cac833a8efb456
   - enabled: 1
     path: Assets/Scenes/StoryTellingEx.unity
     guid: 7f0505212fefe7f40ab155e04b38a193
   - enabled: 1
-    path: Assets/Scenes/StoryTellingMadalyon.unity
-    guid: 6b4efb3f9e25a0447b11a24c73987e8d
+    path: Assets/Scenes/Memory3-Ex.unity
+    guid: b485b1f9b7830f84b8cac833a8efb456
   m_configObjects: {}
