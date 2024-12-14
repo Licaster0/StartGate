@@ -20,7 +20,7 @@ public class rotation : MonoBehaviour
 
     void Update()
     {
-        if (!isDragging) // Sürükleme yapılmıyorsa döndür
+        if (!isDragging) // Sürükleme yapılmıyorsa dairesel hareket
         {
             // Açıyı güncelle
             angle += rotationSpeed * Time.deltaTime;
@@ -42,6 +42,7 @@ public class rotation : MonoBehaviour
         // Sürükleme başladığında fare ile nesne arasındaki mesafeyi hesapla
         isDragging = true;
         offset = transform.position - GetMouseWorldPosition();
+        Debug.Log("Sürükleme çalışıyor");
     }
 
     void OnMouseDrag()
@@ -60,7 +61,7 @@ public class rotation : MonoBehaviour
     {
         // Fare pozisyonunu dünya pozisyonuna çevir
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = Mathf.Abs(mainCamera.transform.position.z); // Kameraya olan mesafe
+        mousePosition.z = Mathf.Abs(mainCamera.transform.position.z - transform.position.z); // Kameraya olan mesafe
         return mainCamera.ScreenToWorldPoint(mousePosition);
     }
 }
