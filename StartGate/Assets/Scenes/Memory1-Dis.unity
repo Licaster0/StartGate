@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 143743506}
   - component: {fileID: 143743505}
   - component: {fileID: 143743504}
-  - component: {fileID: 143743503}
+  - component: {fileID: 143743507}
   m_Layer: 0
   m_Name: Leke (5)
   m_TagString: Leke
@@ -1102,21 +1102,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &143743503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143743502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPaper: 0
-  scenePaperCount: 0
-  canFinish: 0
 --- !u!61 &143743504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1229,6 +1214,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 194354116}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &143743507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143743502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d8c461768054fcb812245de68d921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vileda: {fileID: 1062193952}
+  freshFx: {fileID: 2065404065}
 --- !u!1 &143906058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,11 +1311,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 194354115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29ed88b791f984f14a07558ef04c42ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parts: []
-  collectedPartsCount: 0
 --- !u!1 &211920677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,7 +2372,7 @@ GameObject:
   - component: {fileID: 356437833}
   - component: {fileID: 356437832}
   - component: {fileID: 356437831}
-  - component: {fileID: 356437830}
+  - component: {fileID: 356437834}
   m_Layer: 0
   m_Name: Leke (3)
   m_TagString: Leke
@@ -2383,21 +2380,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &356437830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356437829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPaper: 0
-  scenePaperCount: 0
-  canFinish: 0
 --- !u!61 &356437831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2510,6 +2492,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 194354116}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &356437834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356437829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d8c461768054fcb812245de68d921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vileda: {fileID: 1062193952}
+  freshFx: {fileID: 2065404065}
 --- !u!1 &396436174
 GameObject:
   m_ObjectHideFlags: 0
@@ -6276,12 +6272,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 981825496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
+  m_Script: {fileID: 11500000, guid: f3d8c461768054fcb812245de68d921f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPaper: 0
-  scenePaperCount: 0
-  canFinish: 0
+  vileda: {fileID: 1062193952}
+  freshFx: {fileID: 2065404065}
 --- !u!1 &986038619
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,6 +6815,7 @@ MonoBehaviour:
   - {fileID: 1704661954}
   - {fileID: 889750693}
   collectedPartsCount: 0
+  isAssembled: 0
 --- !u!4 &1062193953
 Transform:
   m_ObjectHideFlags: 0
@@ -8031,7 +8027,7 @@ GameObject:
   - component: {fileID: 1226530343}
   - component: {fileID: 1226530342}
   - component: {fileID: 1226530341}
-  - component: {fileID: 1226530340}
+  - component: {fileID: 1226530344}
   m_Layer: 0
   m_Name: Leke (1)
   m_TagString: Leke
@@ -8039,21 +8035,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1226530340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226530339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPaper: 0
-  scenePaperCount: 0
-  canFinish: 0
 --- !u!61 &1226530341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8166,6 +8147,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 194354116}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226530344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226530339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d8c461768054fcb812245de68d921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vileda: {fileID: 1062193952}
+  freshFx: {fileID: 2065404065}
 --- !u!1 &1239093299
 GameObject:
   m_ObjectHideFlags: 0
@@ -8599,7 +8594,7 @@ GameObject:
   - component: {fileID: 1272462464}
   - component: {fileID: 1272462463}
   - component: {fileID: 1272462462}
-  - component: {fileID: 1272462461}
+  - component: {fileID: 1272462465}
   m_Layer: 0
   m_Name: Leke (2)
   m_TagString: Leke
@@ -8607,21 +8602,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1272462461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272462460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPaper: 0
-  scenePaperCount: 0
-  canFinish: 0
 --- !u!61 &1272462462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8734,6 +8714,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 194354116}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1272462465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272462460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d8c461768054fcb812245de68d921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vileda: {fileID: 1062193952}
+  freshFx: {fileID: 2065404065}
 --- !u!1 &1288007468
 GameObject:
   m_ObjectHideFlags: 0
@@ -11471,7 +11465,7 @@ GameObject:
   - component: {fileID: 1737770555}
   - component: {fileID: 1737770554}
   - component: {fileID: 1737770553}
-  - component: {fileID: 1737770552}
+  - component: {fileID: 1737770556}
   m_Layer: 0
   m_Name: Leke (4)
   m_TagString: Leke
@@ -11479,21 +11473,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1737770552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737770551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee92c34dddfd427fb935876c4f98f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPaper: 0
-  scenePaperCount: 0
-  canFinish: 0
 --- !u!61 &1737770553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11606,6 +11585,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 194354116}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1737770556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737770551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d8c461768054fcb812245de68d921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vileda: {fileID: 1062193952}
+  freshFx: {fileID: 2065404065}
 --- !u!1 &1750256744
 GameObject:
   m_ObjectHideFlags: 0
