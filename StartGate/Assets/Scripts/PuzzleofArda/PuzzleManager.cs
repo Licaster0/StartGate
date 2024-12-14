@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -59,20 +60,7 @@ public class PuzzleManager : MonoBehaviour
             GameManager.Instance.CreateBook();
             GameManager.Instance.player.moveSpeed = 5;
             GameManager.Instance.text.text = "Puzzle Solved! Gate is open!";
-            StartCoroutine(NextScene());
             puzzle.SetActive(false);
         }
-    }
-
-    public void CreateBook()
-    {
-        PlayerImpact playerImpact = GameManager.Instance.player.GetComponent<PlayerImpact>();
-        playerImpact.CreateBook();
-    }
-
-    private IEnumerator NextScene()
-    {
-        yield return new WaitForSeconds(2.5f);
-        GameManager.Instance.ChangeScene(2);
     }
 }

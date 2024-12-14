@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public PlayerMovement player;
     public UI_FadeScreen fadeScreen;
     public TextMeshProUGUI text;
+
+    public int nextSceneIndex;
     private void Awake()
     {
         if (Instance == null)
@@ -22,10 +24,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public IEnumerator ChangeScene(int sceneIndex)
+    public IEnumerator ChangeScene()
     {
-        yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(sceneIndex);
+        yield return new WaitForSeconds(2.3f);
+        SceneManager.LoadScene(nextSceneIndex);
     }
 
     private void Update()

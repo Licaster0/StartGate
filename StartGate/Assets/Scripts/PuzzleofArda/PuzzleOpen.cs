@@ -9,7 +9,7 @@ public class PuzzleOpen : MonoBehaviour
     private bool isPuzzleOpen = false;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && lekeParts.cleanedLekes >= lekeParts.totalLekes)
         {
             GameManager.Instance.text.text = "Puzzle'ı Açmak İçin E Tuşuna Bas!";
             isPuzzleOpen = true;

@@ -42,5 +42,6 @@ public class PlayerImpact : MonoBehaviour
     public void CreateBook()
     {
         GameObject memoryBook = Instantiate(memoryBookPrefab, bookTransform.position, Quaternion.identity);
+        memoryBook.GetComponent<MemoryBook>().isOpened = true;
     }
 }

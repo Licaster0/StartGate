@@ -9,6 +9,8 @@ public class MemoryBook : MonoBehaviour
     public float pullSpeed = 2f;
     public float shrinkSpeed = 0.5f;
 
+    public bool isOpened;
+
     private Transform player;
 
     public void Initialize(Transform playerTransform)
@@ -50,9 +52,12 @@ public class MemoryBook : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(MoveAndPullPlayer());
-            Initialize(other.transform);
+            MoveAndPullPlayer();
+            Initialize(player);
+            StartCoroutine(GameManager.Instance.ChangeScene());
         }
     }
+
+
 
 }
