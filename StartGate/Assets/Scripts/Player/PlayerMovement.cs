@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,13 +9,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private ParticleSystem dustFx;
     private Rigidbody2D rb;
     [SerializeField] private float moveSpeed = 3;
+    [SerializeField] private float Ses = 1;
     [SerializeField] private AnimatonController animator;
     private Vector3 originalScale;
+
+    [SerializeField] public AudioSource FootSteepss;
+    [SerializeField] public AudioClip footstep;
     private void Start()
     {
         originalScale = transform.localScale;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
 
+    }
+
+    public void FootSteeps()
+    {
+        FootSteepss.PlayOneShot(footstep); // Footstep sesini bir kez çal
     }
     private void Update()
     {
