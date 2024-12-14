@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174322722}
   m_Layer: 0
-  m_Name: 1 (1)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ Transform:
   m_GameObject: {fileID: 174322721}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.59, y: -1.98, z: -0.054299362}
+  m_LocalPosition: {x: -2.59, y: -1.77, z: -0.054299362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 245134796}
   m_Layer: 0
-  m_Name: 1 (2)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 245134795}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28, y: -1.92, z: -0.054299362}
+  m_LocalPosition: {x: 0.73, y: -1.74, z: -0.054299362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 355464815}
   m_Layer: 0
-  m_Name: 1 (6)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371651731}
   m_Layer: 0
-  m_Name: 1 (7)
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 566082929}
   - component: {fileID: 566082931}
   m_Layer: 0
-  m_Name: Text (TMP) (2)
+  m_Name: lutfen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: biliyorsun
+  m_text: "l\xFCtfen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -726,7 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f893aea86c38ce847a6c9ef528872e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 355464815}
+  targetPosition: {fileID: 245134796}
   snapDistance: 0.5
 --- !u!1 &599059304
 GameObject:
@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 599059309}
   - component: {fileID: 599059311}
   m_Layer: 0
-  m_Name: Text (TMP) (3)
+  m_Name: yerleri
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yururken
+  m_text: yerleri
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -914,7 +914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.87, y: 3.6388009}
+  m_AnchoredPosition: {x: -3.04, y: 1.11}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &599059309
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f893aea86c38ce847a6c9ef528872e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 371651731}
+  targetPosition: {fileID: 1693086655}
   snapDistance: 0.5
 --- !u!1 &723905474
 GameObject:
@@ -1013,7 +1013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 723905475}
   m_Layer: 0
-  m_Name: 1 (5)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 752538919}
   - component: {fileID: 752538921}
   m_Layer: 0
-  m_Name: Text (TMP) (7)
+  m_Name: "y\xFCr\xFCken"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1174,7 +1174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yerleri
+  m_text: "y\xFCr\xFCrken"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.6098366, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -1304,7 +1304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.939998, y: 3.2088008}
+  m_AnchoredPosition: {x: 5.28, y: 2.11}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &752538919
@@ -1391,7 +1391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f893aea86c38ce847a6c9ef528872e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 1693086655}
+  targetPosition: {fileID: 371651731}
   snapDistance: 0.5
 --- !u!1 &814469430
 GameObject:
@@ -1403,7 +1403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814469431}
   m_Layer: 0
-  m_Name: 1 (8)
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1440,7 +1440,7 @@ GameObject:
   - component: {fileID: 839258560}
   - component: {fileID: 839258562}
   m_Layer: 0
-  m_Name: Text (TMP) (6)
+  m_Name: biliyorsun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1480,7 +1480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: zorlaniyorum
+  m_text: biliyorsun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1610,7 +1610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.250002, y: 2.5188007}
+  m_AnchoredPosition: {x: 2.17, y: 3.31}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &839258560
@@ -1697,7 +1697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f893aea86c38ce847a6c9ef528872e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 814469431}
+  targetPosition: {fileID: 355464815}
   snapDistance: 0.5
 --- !u!1 &839561895
 GameObject:
@@ -1967,7 +1967,7 @@ GameObject:
   - component: {fileID: 1110521536}
   - component: {fileID: 1110521538}
   m_Layer: 0
-  m_Name: Text (TMP) (5)
+  m_Name: unutma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2007,7 +2007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: kizim
+  m_text: unutma
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2137,7 +2137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.380002, y: 3.6388009}
+  m_AnchoredPosition: {x: 2.84, y: 1.63}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1110521536
@@ -2224,7 +2224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f893aea86c38ce847a6c9ef528872e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 174322722}
+  targetPosition: {fileID: 723905475}
   snapDistance: 0.5
 --- !u!1 &1162498934
 GameObject:
@@ -2304,7 +2304,7 @@ Transform:
   m_GameObject: {fileID: 1162498934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.64, y: -1.84, z: 0}
+  m_LocalPosition: {x: 0.17, y: -1.81, z: 0}
   m_LocalScale: {x: 2.2413, y: 0.46019995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2320,7 +2320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170841074}
   m_Layer: 0
-  m_Name: 1 (4)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2335,7 +2335,7 @@ Transform:
   m_GameObject: {fileID: 1170841073}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.04, y: -1.83, z: -0.054299362}
+  m_LocalPosition: {x: 6.37, y: -1.68, z: -0.054299362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2441,7 +2441,7 @@ GameObject:
   - component: {fileID: 1505576637}
   - component: {fileID: 1505576639}
   m_Layer: 0
-  m_Name: Text (TMP) (4)
+  m_Name: silmeyi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,7 +2611,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.0399995, y: 1.9588008}
+  m_AnchoredPosition: {x: -2.88, y: 3.24}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1505576637
@@ -2778,7 +2778,7 @@ Transform:
   m_GameObject: {fileID: 1524953225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44, y: -1.84, z: 0}
+  m_LocalPosition: {x: -2.89, y: -1.78, z: 0}
   m_LocalScale: {x: 2.2413, y: 0.46019995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2940,7 +2940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1693086655}
   m_Layer: 0
-  m_Name: 1 (3)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,7 +2955,7 @@ Transform:
   m_GameObject: {fileID: 1693086654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.18, y: -1.86, z: -0.054299362}
+  m_LocalPosition: {x: 3.58, y: -1.77, z: -0.054299362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2977,7 +2977,7 @@ GameObject:
   - component: {fileID: 1705197495}
   - component: {fileID: 1705197497}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Sevgili
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3133,7 +3133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.81, y: 1.5188019}
+  m_AnchoredPosition: {x: -5.56, y: 2.38}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705197494
@@ -3252,7 +3252,7 @@ GameObject:
   - component: {fileID: 1793998639}
   - component: {fileID: 1793998641}
   m_Layer: 0
-  m_Name: Text (TMP) (8)
+  m_Name: "zorlan\u0131yorum"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3292,7 +3292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: unutma
+  m_text: zorlaniyorum
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3355,7 +3355,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -3.9639187, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -3422,7 +3422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.06, y: 3.4688008}
+  m_AnchoredPosition: {x: 5.84, y: 3.47}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1793998639
@@ -3509,7 +3509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f893aea86c38ce847a6c9ef528872e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 723905475}
+  targetPosition: {fileID: 814469431}
   snapDistance: 0.5
 --- !u!1 &1794298638
 GameObject:
@@ -3527,7 +3527,7 @@ GameObject:
   - component: {fileID: 1794298644}
   - component: {fileID: 1794298646}
   m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Name: kizim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3567,7 +3567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "l\xFCtfen"
+  m_text: kizim
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3784,7 +3784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f893aea86c38ce847a6c9ef528872e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 245134796}
+  targetPosition: {fileID: 174322722}
   snapDistance: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
