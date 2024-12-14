@@ -473,7 +473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 475bc177bd4ca4934a6cfd534b500509, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0433660e76838fc4fb60676fa9eab07d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1166,60 +1166,61 @@ PrefabInstance:
       objectReference: {fileID: 743284299}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.size
-      value: 19
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Benim adim Zumra.
+      value: O gun buyuk gundu.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: Annem bana ananesinin ismini vermis.
+      value: Okulun en iyi satranc oynayan iki ogrencisi, ben ve Ali,
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
+      value: Okul turnuvasinin finalinde kozlarimizi paylasacaktik.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: Bugune kadar cok guzel bir hayatim olmadi ve bunda benim payim var.
+      value: Bu final icin cok calismistim, Ali'yi alt etmek istiyordum.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: Bir katil veya hirsiz degilim,
+      value: Satranc macina iyi basladim,
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: Ama gecmisim beni urkutecek derece karanlik...
+      value: Fakat macin ortalarinda ustunlugumu yavas yavas yitirdigimi fark ettim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[6]
-      value: Ama gecmisim beni urkutecek derece karanlik...
+      value: Bu gidisata bir dur demem gerekiyordu.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[7]
-      value: Bu sucluluk duygusunu ustumden atamiyorum, Allah kahretsin!
+      value: Ben de, Ali'nin bir anlik dalginligindan faydalanarak bir tasi caldim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[8]
-      value: Belki bir yolu vardi,
+      value: Elde ettigim gecici ustunlugu degerlendirerek rakibimi alt ettim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[9]
-      value: Belki icimde bulundugum karanliktan cikmam icin bir kapiyi acmam yeterliydi,
-        kim bilir...
+      value: Turnuva bitiminde herkes - ogretmenlerim, arkadaslarim, ailem - beni
+        tebrik ediyordu.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[10]
-      value: Bazen uyuyamadigim gecelerin sabahi balkona cikiyorum.
+      value: Bense yaptigim seyin yanlisliginin farkinda degildim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[11]
-      value: Bir yavru kusu ve annesini oterken goruyorum.
+      value: Gecmise donup,
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[12]
-      value: Bu benim icin azaplarin en buyugu oluveriyor birden.
+      value: Su sisemle tam ustumuzdeki lambayi hedef alarak macin tekrar oynanmasina
+        sebep olmam en iyisi olacakti...
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[13]
