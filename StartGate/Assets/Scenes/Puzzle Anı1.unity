@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 366179447}
   - component: {fileID: 366179446}
   - component: {fileID: 366179450}
+  - component: {fileID: 366179451}
   m_Layer: 0
   m_Name: p3
   m_TagString: Untagged
@@ -378,6 +379,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 1650992942}
   snapDistance: 0.3
+--- !u!50 &366179451
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366179445}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &369677135
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +419,7 @@ GameObject:
   - component: {fileID: 369677137}
   - component: {fileID: 369677136}
   - component: {fileID: 369677140}
+  - component: {fileID: 369677141}
   m_Layer: 0
   m_Name: p5
   m_TagString: Untagged
@@ -536,6 +565,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 649820170}
   snapDistance: 0.3
+--- !u!50 &369677141
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369677135}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &520727727
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +605,7 @@ GameObject:
   - component: {fileID: 520727729}
   - component: {fileID: 520727728}
   - component: {fileID: 520727732}
+  - component: {fileID: 520727733}
   m_Layer: 0
   m_Name: p2
   m_TagString: Untagged
@@ -694,6 +751,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 2042688009}
   snapDistance: 0.3
+--- !u!50 &520727733
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520727727}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &649820169
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +937,7 @@ GameObject:
   - component: {fileID: 1240632661}
   - component: {fileID: 1240632660}
   - component: {fileID: 1240632664}
+  - component: {fileID: 1240632665}
   m_Layer: 0
   m_Name: p4
   m_TagString: Untagged
@@ -998,6 +1083,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 91627055}
   snapDistance: 0.3
+--- !u!50 &1240632665
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240632659}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1322257908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1215,7 @@ GameObject:
   - component: {fileID: 1330349740}
   - component: {fileID: 1330349739}
   - component: {fileID: 1330349743}
+  - component: {fileID: 1330349744}
   m_Layer: 0
   m_Name: p1
   m_TagString: Untagged
@@ -1248,6 +1361,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 71738890}
   snapDistance: 0.3
+--- !u!50 &1330349744
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330349738}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1650992941
 GameObject:
   m_ObjectHideFlags: 0

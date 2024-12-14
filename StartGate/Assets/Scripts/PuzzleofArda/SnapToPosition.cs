@@ -15,6 +15,8 @@ public class SnapToPosition : MonoBehaviour
         if (!isPlaced && Vector3.Distance(transform.position, targetPosition.position) < snapDistance)
         {
             transform.position = targetPosition.position; // Parçayı hedefe sabitle
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            rb.isKinematic = true;
         }
     }
    
