@@ -10,6 +10,7 @@ public class Tas : MonoBehaviour
         if (other.gameObject.name == "LampLight")
         {
             isTriggered = true;
+            
         }
     }
 
