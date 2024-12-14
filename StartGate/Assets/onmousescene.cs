@@ -9,5 +9,6 @@ public class onmousescene : MonoBehaviour
     public void NextScene()
     {
         SceneManager.LoadScene("puzzle2");
+        
     }
 }

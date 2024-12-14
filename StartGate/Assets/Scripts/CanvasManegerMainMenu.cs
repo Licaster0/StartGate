@@ -4,18 +4,30 @@ using UnityEngine.SceneManagement;
 
 public class Canvas : MonoBehaviour
 {
+    public static Canvas Instance;
+
     [SerializeField] private GameObject creditAnimation;
     [SerializeField] private CanvasGroup creditPanel;
     [SerializeField] private float fadeDuration = 0.5f; 
     [SerializeField] private bool isPanelVisible = false;
-
-    private void Start()
+    public bool isSettingsPanelVisible = false;
+    [SerializeField] private CanvasGroup settingsPanel;
+    private void Awake()
     {
-
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        settingsPanel.gameObject.SetActive(false);
+        creditPanel.gameObject.SetActive(false);
     }
 
     public void ToggleCreditPanel()
@@ -32,6 +44,48 @@ public class Canvas : MonoBehaviour
         isPanelVisible = !isPanelVisible;
     }
 
+    public void ToggleSettingsPanel()
+    {
+        if (isSettingsPanelVisible)
+        {
+            StartCoroutine(SettingsFadeOut());
+        }
+        else
+        {
+            StartCoroutine(SettingsFadeIn());
+        }
+
+        isSettingsPanelVisible = !isSettingsPanelVisible;
+    }
+    private IEnumerator SettingsFadeIn()
+    {
+        settingsPanel.gameObject.SetActive(true);
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            settingsPanel.alpha = Mathf.Lerp(0f, 1f, elapsedTime / fadeDuration);
+            yield return null;
+        }
+
+        settingsPanel.alpha = 1f;
+    }
+
+    private IEnumerator SettingsFadeOut()
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            settingsPanel.alpha = Mathf.Lerp(1f, 0f, elapsedTime / fadeDuration);
+            yield return null;
+        }
+
+        settingsPanel.alpha = 0f;
+        settingsPanel.gameObject.SetActive(false);
+    }
     private IEnumerator FadeIn()
     {
         creditPanel.gameObject.SetActive(true);

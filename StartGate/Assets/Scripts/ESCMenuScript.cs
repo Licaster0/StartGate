@@ -28,18 +28,27 @@ public class ESCMenuScript : MonoBehaviour
         }
     }
     
-    void PauseGame()
+    public void PauseGame()
     {
         pauseMenuPanel.SetActive(true); // Menü panelini aç
         Time.timeScale = 0f; // Oyunu duraklat
         isPaused = true;
     }
 
-    void ResumeGame()
+    public void ResumeGame()
     {
         pauseMenuPanel.SetActive(false); // Menü panelini kapat
         Time.timeScale = 1f; // Oyunu devam ettir
         isPaused = false;
     }
-
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+        pauseMenuPanel.gameObject.SetActive(false);
+        Canvas.Instance.isSettingsPanelVisible = false;
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
