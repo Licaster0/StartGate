@@ -29,9 +29,16 @@ public class Leke : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isCollected)
         {
+            PlayerReferences();
             GameManager.Instance.StartCoroutine(GameManager.Instance.ChangeScene(1));
             Destroy(gameObject);
             GameManager.Instance.text.text = "";
         }
+    }
+
+    private void PlayerReferences()
+    {
+        PlayerImpact playerImpact = GameManager.Instance.player.GetComponent<PlayerImpact>();
+        playerImpact.CreateBook();
     }
 }
