@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ESCMenuScript : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class ESCMenuScript : MonoBehaviour
     void Update()
     {
         // ESC tuþuna basýldýðýnda
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainScreen")
         {
             if (isPaused)
             {
