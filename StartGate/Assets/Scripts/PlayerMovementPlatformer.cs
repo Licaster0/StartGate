@@ -179,6 +179,10 @@ public class PlayerMovementPlatformer : MonoBehaviour
         {
             promptText.text = "Press E Key"; // UI öðesine metin atamasý
         }
+        else
+        {
+            Debug.Log("Gate deðil");
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -190,6 +194,10 @@ public class PlayerMovementPlatformer : MonoBehaviour
                 Debug.Log("deneme");
             }
         }
+        else
+        {
+            Debug.Log("Gate deðil");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -197,6 +205,10 @@ public class PlayerMovementPlatformer : MonoBehaviour
         if (collision.CompareTag("Gate"))
         {
             promptText.text = ""; // UI öðesindeki metni temizle
+        }
+        else
+        {
+            Debug.Log("Gate deðil");
         }
     }
 

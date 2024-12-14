@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/MainScreen.unity
     guid: e1d9cb09067c8004e842aa9e863d153d
@@ -22,8 +19,5 @@ EditorBuildSettings:
     guid: 33b4c72608774ca4ebc6244ef7f82868
   - enabled: 1
     path: Assets/Scenes/Memory3-Ex.unity
-    guid: 100d710353c5747678bbeec5e617699e
-  - enabled: 1
-    path: Assets/Scenes/puzzle2.unity
-    guid: 2bd12e58d33912c4c89630df6095c637
+    guid: b485b1f9b7830f84b8cac833a8efb456
   m_configObjects: {}
