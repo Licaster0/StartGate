@@ -24,7 +24,11 @@ public class PlayerImpact : MonoBehaviour
         if (Icollectable != null)
         {
             currentCollectable = null;
-            text.enabled = false;
+            if(text != null)
+            {
+                text.enabled = false;
+            }
+          
 
         }
     }
