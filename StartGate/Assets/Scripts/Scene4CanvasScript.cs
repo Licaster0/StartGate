@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Buffers;
 
 public class Scene4CanvasScript : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class Scene4CanvasScript : MonoBehaviour
         {
             // Kitap objesi oluşturuluyor
             spawnedBook = Instantiate(bookPrefab, target.position, target.rotation);
+            spawnedBook.GetComponent<MemoryBook>().Initialize(transform);
 
             // Sprite'i "açık" hale getir
             if (spriteImage != null && switchOnSprite != null)
