@@ -1,21 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Scene4CanvasScript : MonoBehaviour
 {
-    [SerializeField] GameObject book;
-    [SerializeField] Transform target;
+    [SerializeField] private GameObject bookPrefab;
+    [SerializeField] private Transform target;
+    [SerializeField] private Sprite switchOnSprite;
+    [SerializeField] private Sprite switchOffSprite;
 
-    public int x = 0;
-    public void CreateBook()
+    private GameObject spawnedBook;
+    private Image spriteImage;
+
+    private void Start()
     {
-        if (x < 1)
+        // Bu objedeki SpriteRenderer bileşenini al
+        spriteImage = GameObject.Find("Test").GetComponent<Image>();
+
+        // Başlangıçta switch kapalı görünümüyle başla
+        if (spriteImage != null && switchOffSprite != null)
         {
-            GameObject memoryBook = Instantiate(book, target.position, Quaternion.identity);
-            memoryBook.GetComponent<MemoryBook>().Initialize(transform);
+            spriteImage.sprite = switchOffSprite;
         }
-        x++;
     }
 
+    public void MemoryBook()
+    {
+        if (spawnedBook == null)
+        {
+            // Kitap objesi oluşturuluyor
+            spawnedBook = Instantiate(bookPrefab, target.position, target.rotation);
+
+            // Sprite'i "açık" hale getir
+            if (spriteImage != null && switchOnSprite != null)
+            {
+                spriteImage.sprite = switchOnSprite;
+            }
+        }
+        else
+        {
+            // Kitap objesi siliniyor
+            Destroy(spawnedBook);
+            spawnedBook = null;
+
+            // Sprite'i "kapalı" hale getir
+            if (spriteImage != null && switchOffSprite != null)
+            {
+                spriteImage.sprite = switchOffSprite;
+            }
+        }
+    }
 }
