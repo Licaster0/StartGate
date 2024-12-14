@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TypingEffect : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class TypingEffect : MonoBehaviour
             }
             else
             {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
                 textComponent.text = ""; // Diyaloglar bittiðinde text'i temizle
             }
         }
