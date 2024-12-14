@@ -24,6 +24,7 @@ public class PlayerImpact : MonoBehaviour
         {
             currentCollectable = null;
             text.enabled = false;
+
         }
     }
 

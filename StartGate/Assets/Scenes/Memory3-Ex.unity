@@ -3598,11 +3598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5356973253961468860, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.87
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 5356973253961468860, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: 5.7
       objectReference: {fileID: 0}
     - target: {fileID: 5356973253961468860, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3968,8 +3968,8 @@ GameObject:
   - component: {fileID: 1655624567}
   - component: {fileID: 1655624566}
   - component: {fileID: 1655624565}
-  - component: {fileID: 1655624568}
   - component: {fileID: 1655624569}
+  - component: {fileID: 1655624570}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4051,40 +4051,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1655624568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655624564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1655624569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4145,6 +4111,22 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1655624570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655624564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63f71f7e5c036c54fb1e4f43b2bab8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  minBounds: {x: 1.5, y: 0}
+  maxBounds: {x: 27, y: 10}
+  smoothSpeed: 0.125
 --- !u!1 &1783817586
 GameObject:
   m_ObjectHideFlags: 0
