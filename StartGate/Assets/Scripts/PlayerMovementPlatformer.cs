@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovementPlatformer : MonoBehaviour
 {
@@ -24,11 +25,16 @@ public class PlayerMovementPlatformer : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
-        spriteRenderer = GetComponent<SpriteRenderer>();    
+        spriteRenderer = GetComponent<SpriteRenderer>();
         // Animator'ý almak
         animator = GetComponent<Animator>();
-    }
+        StartCoroutine(FadeInStart());
 
+    }
+    private IEnumerator FadeInStart()
+    {
+        yield return StartCoroutine(FadeIn());
+    }
     void Update()
     {
         animator.SetFloat("speed", Vector2.ClampMagnitude(rb.velocity, 1).magnitude);
@@ -66,9 +72,22 @@ public class PlayerMovementPlatformer : MonoBehaviour
     {
         StartCoroutine(SmoothResetPosition());
     }
+
     private IEnumerator SmoothResetPosition()
     {
-        // 1. Küçülerek görünmez olma
+        // 1. Fade Out (Küçülme ve görünmez olma)
+        yield return StartCoroutine(FadeOut());
+
+        // Pozisyonu baþlangýç pozisyonuna sýfýrla
+        transform.position = startPosition;
+
+        // 2. Fade In (Yavaþça büyüyerek görünür olma)
+        yield return StartCoroutine(FadeIn());
+    }
+
+    // Fade Out (Görünmez Olma) Methodu
+    private IEnumerator FadeOut()
+    {
         float shrinkDuration = 0.5f; // Küçülme süresi
         float elapsed = 0f;
 
@@ -92,13 +111,16 @@ public class PlayerMovementPlatformer : MonoBehaviour
 
         transform.localScale = Vector3.zero; // Tamamen küçül
         spriteRenderer.color = new Color(1, 1, 1, 0); // Tamamen görünmez
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
-        // Pozisyonu baþlangýç pozisyonuna sýfýrla
-        transform.position = startPosition;
-
-        // 2. Yavaþça büyüyerek görünür olma
+    // Fade In (Görünür Olma) Methodu
+    private IEnumerator FadeIn()
+    {
         float growDuration = 0.5f; // Büyüme süresi
-        elapsed = 0f;
+        float elapsed = 0f;
+
+        Vector3 originalScale = transform.localScale;
 
         while (elapsed < growDuration)
         {
@@ -111,8 +133,6 @@ public class PlayerMovementPlatformer : MonoBehaviour
 
         transform.localScale = originalScale; // Orijinal boyut
         spriteRenderer.color = new Color(1, 1, 1, 1); // Tamamen görünür
-
-
     }
     /*
     private IEnumerator SmoothResetPosition()
