@@ -4,19 +4,30 @@ using UnityEngine.SceneManagement;
 
 public class Canvas : MonoBehaviour
 {
+    public static Canvas Instance;
+
     [SerializeField] private GameObject creditAnimation;
     [SerializeField] private CanvasGroup creditPanel;
     [SerializeField] private float fadeDuration = 0.5f; 
     [SerializeField] private bool isPanelVisible = false;
-    [SerializeField] private bool isSettingsPanelVisible = false;
+    public bool isSettingsPanelVisible = false;
     [SerializeField] private CanvasGroup settingsPanel;
-    private void Start()
+    private void Awake()
     {
-
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        settingsPanel.gameObject.SetActive(false);
+        creditPanel.gameObject.SetActive(false);
     }
 
     public void ToggleCreditPanel()
