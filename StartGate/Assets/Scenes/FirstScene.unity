@@ -1265,7 +1265,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2024036062}
   - {fileID: 2003960202}
   - {fileID: 1297633339}
   m_Father: {fileID: 0}
@@ -1517,6 +1516,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< HEAD
+=======
 --- !u!1 &2024036061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1662,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.2590485, y: 1}
   m_EdgeRadius: 0
+>>>>>>> b3a99bf69afe928405e2589ec670708ee8a89a34
 --- !u!1 &2117860025
 GameObject:
   m_ObjectHideFlags: 0
