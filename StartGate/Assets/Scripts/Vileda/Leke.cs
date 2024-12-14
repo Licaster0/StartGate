@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Leke : MonoBehaviour
 {
     [SerializeField] private Vileda vileda;
+    [SerializeField] private ParticleSystem freshFx;
 
     private bool isCollected = false;
 
@@ -29,6 +30,7 @@ public class Leke : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isCollected)
         {
+            freshFx.Play();
             PlayerReferences();
             GameManager.Instance.StartCoroutine(GameManager.Instance.ChangeScene(1));
             Destroy(gameObject);
