@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class onmousescene : MonoBehaviour
 {
-    private void OnMouseDown()
+    public void NextScene()
     {
         SceneManager.LoadScene("puzzle2");
     }
