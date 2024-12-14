@@ -274,8 +274,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1621327328}
   - {fileID: 354495481}
+  - {fileID: 780811703}
   m_Father: {fileID: 242574617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -408,7 +408,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 780811703}
   - {fileID: 529981631}
   m_Father: {fileID: 242574617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -544,6 +543,7 @@ RectTransform:
   - {fileID: 2016603891}
   - {fileID: 1034590107}
   - {fileID: 1682990956}
+  - {fileID: 1621327328}
   - {fileID: 83769569}
   - {fileID: 167261367}
   m_Father: {fileID: 5815436}
@@ -1025,12 +1025,12 @@ RectTransform:
   m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 167261367}
+  m_Father: {fileID: 83769569}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10.74, y: 8.05}
+  m_AnchoredPosition: {x: 0, y: -292.34497}
+  m_SizeDelta: {x: 10.74, y: 8.050031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &780811704
 MonoBehaviour:
@@ -1690,12 +1690,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 83769569}
+  m_Father: {fileID: 242574617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 8.05, y: 9.4}
+  m_AnchoredPosition: {x: 0, y: -52.900024}
+  m_SizeDelta: {x: -419.52997, y: -870.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621327329
 MonoBehaviour:
@@ -2208,7 +2208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8312349250185402398, guid: c6fa2a1651d62b143b623da68b4ba0d4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8769730995787276769, guid: c6fa2a1651d62b143b623da68b4ba0d4, type: 3}
       propertyPath: m_AnchorMax.x
