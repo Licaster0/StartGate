@@ -15,6 +15,6 @@ public class Brush : MonoBehaviour, ICollectable
     private IEnumerator enumerator()
     {
         yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }
