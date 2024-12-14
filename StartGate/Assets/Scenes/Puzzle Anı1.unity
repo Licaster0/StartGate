@@ -818,6 +818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 837720033}
+  - component: {fileID: 837720034}
   m_Layer: 0
   m_Name: puzzlemanager
   m_TagString: Untagged
@@ -840,6 +841,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837720034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837720031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c830c1298c1c9c4f9f44f8d6d7469c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1: {fileID: 1330349738}
+  p2: {fileID: 520727727}
+  p3: {fileID: 366179445}
+  p4: {fileID: 1240632659}
+  p5: {fileID: 369677135}
+  p1pos: {fileID: 71738890}
+  p2pos: {fileID: 2042688009}
+  p3pos: {fileID: 1650992942}
+  p4pos: {fileID: 91627055}
+  p5pos: {fileID: 649820170}
 --- !u!1 &1114067744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1343,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 85120091e1d81034c82b4f16afb55561, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
