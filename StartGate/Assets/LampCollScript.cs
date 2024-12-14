@@ -44,6 +44,7 @@ public class LampCollScript : MonoBehaviour
     {
         Debug.Log("2");
         yield return new WaitForSeconds(2f);
+        GameManager.Instance.fadeScreen.FadeOut();
         CreateBook();
         StartCoroutine(DelayScene());
         Debug.Log("3");
