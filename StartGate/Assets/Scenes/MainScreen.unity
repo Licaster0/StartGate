@@ -1301,6 +1301,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5948280025771919469, guid: c6fa2a1651d62b143b623da68b4ba0d4, type: 3}
+      propertyPath: Fullpanel
+      value: 
+      objectReference: {fileID: 1760036642}
     - target: {fileID: 6221066757211244639, guid: c6fa2a1651d62b143b623da68b4ba0d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2344,6 +2348,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682990955}
   m_CullTransparentMesh: 1
+--- !u!1 &1760036642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2983102910464527029, guid: c6fa2a1651d62b143b623da68b4ba0d4, type: 3}
+  m_PrefabInstance: {fileID: 951553345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1879283770
 GameObject:
   m_ObjectHideFlags: 0
