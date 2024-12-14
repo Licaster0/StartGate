@@ -18,9 +18,9 @@ public class PlayerMovementPlatformer : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-
-    // Animator referansý
     private Animator animator;
+    private bool isJumping = false;
+    private bool wasGrounded = false; // Yere deðip deðmediðini kontrol et
 
     void Start()
     {
@@ -29,7 +29,6 @@ public class PlayerMovementPlatformer : MonoBehaviour
         // Animator'ý almak
         animator = GetComponent<Animator>();
         StartCoroutine(FadeInStart());
-
     }
     private IEnumerator FadeInStart()
     {
@@ -37,20 +36,52 @@ public class PlayerMovementPlatformer : MonoBehaviour
     }
     void Update()
     {
-        animator.SetFloat("speed", Vector2.ClampMagnitude(rb.velocity, 1).magnitude);
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        // Yere deðiyor mu?
+        bool isGrounded = IsGrounded();
+
+        // Yere deðmiyorsa ve daha önce yere deðmiþse Jump animasyonunu baþlat
+        if (!isGrounded && wasGrounded)
+        {
+            SetJumpingAnimation(true);  // Jump animasyonunu baþlat
+        }
+
+        // Eðer zýplama yapýlýyorsa, Jump animasyonunu baþlat
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            SetJumpingAnimation(true);  // Jump animasyonunu baþlat
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        // Zýplama sona erdiðinde yere deðiyorsa, Jump animasyonunu bitir
+        if (isGrounded && !wasGrounded && rb.velocity.y <= 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            SetJumpingAnimation(false);  // Jump animasyonunu bitir
         }
 
-        Flip();
+        // Yere deðdiði her frame'de, bu bilgiyi kaydet
+        wasGrounded = isGrounded;
+
+        animator.SetFloat("speed", Mathf.Abs(horizontal)); // Hareket animasyonu
+        Flip(); // Yön deðiþtirme
+    }
+
+    // Jump animasyonunu kontrol et
+    private void SetJumpingAnimation(bool isJumping)
+    {
+        if (isJumping)
+        {
+            this.isJumping = isJumping;
+            //animator.SetBool("isJumping", isJumping);
+            animator.CrossFade("jump", 1);
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        // Yer kontrolü için OverlapCircle kullanýyoruz, yerle temas edip etmediðini tespit ediyoruz
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -59,15 +90,12 @@ public class PlayerMovementPlatformer : MonoBehaviour
             ResetPosition();
         }
     }
+
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
-    private bool IsGrounded()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-    }
     void ResetPosition()
     {
         StartCoroutine(SmoothResetPosition());
@@ -134,32 +162,6 @@ public class PlayerMovementPlatformer : MonoBehaviour
         transform.localScale = originalScale; // Orijinal boyut
         spriteRenderer.color = new Color(1, 1, 1, 1); // Tamamen görünür
     }
-    /*
-    private IEnumerator SmoothResetPosition()
-    {
-        float duration = 1f;
-        float elapsed = 0f;
-        Vector3 currentPosition = transform.position;
-        Vector3 originalScale = transform.localScale;
-
-        if (rb != null)
-        {
-            rb.velocity = Vector2.zero;
-            rb.angularVelocity = 0f;
-        }
-
-        while (elapsed < duration)
-        {
-            transform.position = Vector3.Lerp(currentPosition, startPosition, elapsed / duration);
-            transform.localScale = Vector3.Lerp(originalScale, originalScale * 0.5f, elapsed / duration); // Küçült
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        transform.position = startPosition;
-        transform.localScale = originalScale; // Orijinal boyutuna dön
-    }
-    */
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
