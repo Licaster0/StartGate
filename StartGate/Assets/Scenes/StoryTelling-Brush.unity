@@ -1242,48 +1242,51 @@ PrefabInstance:
       objectReference: {fileID: 743284299}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.size
-      value: 19
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Benim adim Zumra.
+      value: "Bir sabah, annem bana 'Yerlere Vileda yap' demis\u0327ti."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: Annem bana ananesinin ismini vermis.
+      value: "O an isim oldugu icin 'Aksama yapar\u0131m' diye gecistirdim"
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
+      value: "Ancak o kadar yogunlast\u0131m ki, zamanla bunu tamamen unuttum."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: Bugune kadar cok guzel bir hayatim olmadi ve bunda benim payim var.
+      value: "O gun aksam geldiginde, annemin beni hat\u0131rlatmas\u0131 u\u0308zerine,"
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: Bir katil veya hirsiz degilim,
+      value: "Hic yapmadigimi fark ettim ve icimde bu\u0308yu\u0308k bir pismanl\u0131k
+        hissettim."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: Ama gecmisim beni urkutecek derece karanlik...
+      value: "Annemin o anki kalp kirikligini gormek, beni derinden uzdu ve o gunu
+        asla unutamad\u0131m."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[6]
-      value: Ama gecmisim beni urkutecek derece karanlik...
+      value: O zamanlar ne kadar basit bir is gibi gorunduyse de,
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[7]
-      value: Bu sucluluk duygusunu ustumden atamiyorum, Allah kahretsin!
+      value: "Annemin kalbini k\u0131rd\u0131g\u0131m o an, aradan y\u0131llar gecse
+        de hafizamda silinmedi."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[8]
-      value: Belki bir yolu vardi,
+      value: O gunden sonra, her ne kadar hayatimda daha guzel ve mutlu anlar olsa
+        da,
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[9]
-      value: Belki icimde bulundugum karanliktan cikmam icin bir kapiyi acmam yeterliydi,
-        kim bilir...
+      value: "O gunu ve annemin uzuldugu an\u0131 hep hatirlad\u0131m."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[10]
