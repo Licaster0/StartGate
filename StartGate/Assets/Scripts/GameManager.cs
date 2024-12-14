@@ -27,4 +27,18 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneIndex);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            CreateBook();
+        }
+    }
+
+    public void CreateBook()
+    {
+        PlayerImpact _player = player.GetComponent<PlayerImpact>();
+        _player.CreateBook();
+    }
 }

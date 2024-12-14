@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     [SerializeField] private ParticleSystem dustFx;
     private Rigidbody2D rb;
-    [SerializeField] private float moveSpeed = 3;
+    public float moveSpeed = 3;
     [SerializeField] private AnimatonController animator;
     private Vector3 originalScale;
 
@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    
+
     private void Update()
     {
         Move();

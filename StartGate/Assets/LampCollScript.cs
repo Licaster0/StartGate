@@ -45,7 +45,7 @@ public class LampCollScript : MonoBehaviour
         Debug.Log("2");
         yield return new WaitForSeconds(2f);
         GameManager.Instance.fadeScreen.FadeOut();
-        CreateBook();
+        GameManager.Instance.CreateBook();
         StartCoroutine(DelayScene());
         Debug.Log("3");
     }
@@ -57,10 +57,5 @@ public class LampCollScript : MonoBehaviour
         SceneManager.LoadScene(2);
         Debug.Log("4");
 
-    }
-    public void CreateBook()
-    {
-        PlayerImpact playerImpact = GameManager.Instance.player.GetComponent<PlayerImpact>();
-        playerImpact.CreateBook();
     }
 }

@@ -6,8 +6,8 @@ public class LekeParts : MonoBehaviour
 {
     public static LekeParts Instance; // Singleton tasarımı
 
-    private int totalLekes; // Toplam leke sayısı
-    private int cleanedLekes = 0; // Temizlenen leke sayısı
+    public int totalLekes; // Toplam leke sayısı
+    public int cleanedLekes = 0; // Temizlenen leke sayısı
 
     private void Awake()
     {
@@ -37,7 +37,7 @@ public class LekeParts : MonoBehaviour
         // Tüm lekeler temizlendiyse sahneyi değiştir
         if (cleanedLekes >= totalLekes)
         {
-            StartCoroutine(SahneDegistir());
+            GameManager.Instance.text.text = "Tüm Lekeler Temizlendi Geçiti Aktif Et!";
         }
     }
 
@@ -49,7 +49,6 @@ public class LekeParts : MonoBehaviour
 
     private IEnumerator SahneDegistir()
     {
-        CreateBook();
         Debug.Log("Tüm lekeler temizlendi, sahne değiştiriliyor...");
         yield return new WaitForSeconds(2f); // 2 saniye bekle
         SceneManager.LoadScene(2); // 1 numaralı sahneyi yükle (numara veya isim verilebilir)
