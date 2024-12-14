@@ -43,4 +43,6 @@ public class Leke : MonoBehaviour
         PlayerImpact playerImpact = GameManager.Instance.player.GetComponent<PlayerImpact>();
         playerImpact.CreateBook();
     }
+
+    
 }
