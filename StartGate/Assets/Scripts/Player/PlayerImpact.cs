@@ -13,7 +13,7 @@ public class PlayerImpact : MonoBehaviour
         {
             currentCollectable = Icollectable;
             text.enabled = true;
-            text.text = "Press E Key";
+            text.text = "Etkilesim icin E tusuna basin";
         }
     }
 
