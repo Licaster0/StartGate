@@ -1282,7 +1282,16 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 957375152}
-    m_RemovedComponents: []
+    - target: {fileID: 4339513108527545903, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219615441794256930, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4339513108527545903, guid: 8713681159843544fb223c12cf6173bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
