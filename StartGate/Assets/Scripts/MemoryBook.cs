@@ -14,6 +14,7 @@ public class MemoryBook : MonoBehaviour
     public void Initialize(Transform playerTransform)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        GameObject _currentPlayer = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(MoveAndPullPlayer());
     }
 
@@ -33,6 +34,11 @@ public class MemoryBook : MonoBehaviour
             player.localScale = Vector3.Lerp(player.localScale, Vector3.zero, shrinkSpeed * Time.deltaTime);
 
             yield return null;
+
+            if (player.GetComponent<Rigidbody2D>() != null)
+            {
+                player.GetComponent<Rigidbody2D>().gravityScale = 0f;
+            }
         }
 
 
