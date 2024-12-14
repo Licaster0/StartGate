@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Vector2 movement;
+    [SerializeField] private ParticleSystem dustFx;
     private Rigidbody2D rb;
     [SerializeField] private float moveSpeed = 3;
     [SerializeField] private AnimatonController animator;
@@ -35,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.MovePosition(rb.position + normalizedMovement * moveSpeed * Time.fixedDeltaTime);
-
         if (movement.x > 0)
         {
             // Sa�a gidiyorsa
