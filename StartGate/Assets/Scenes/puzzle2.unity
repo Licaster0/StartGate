@@ -2868,6 +2868,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1663924995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1663924997}
+  - component: {fileID: 1663924996}
+  m_Layer: 0
+  m_Name: bilmecemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1663924996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663924995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6b74f90ac052e4d9a8362f252ce732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  k1: {fileID: 1705197489}
+  k2: {fileID: 1794298638}
+  k3: {fileID: 566082924}
+  k4: {fileID: 599059304}
+  k5: {fileID: 1505576632}
+  k6: {fileID: 1110521531}
+  k7: {fileID: 839258555}
+  k8: {fileID: 752538914}
+  k9: {fileID: 1793998634}
+  k1pos: {fileID: 55367306}
+  k2pos: {fileID: 174322722}
+  k3pos: {fileID: 245134796}
+  k4pos: {fileID: 1693086655}
+  k5pos: {fileID: 1170841074}
+  k6pos: {fileID: 723905475}
+  k7pos: {fileID: 355464815}
+  k8pos: {fileID: 371651731}
+  k9pos: {fileID: 814469431}
+--- !u!4 &1663924997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663924995}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7877981, y: -0.033466473, z: -0.054299362}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1693086654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,3 +3818,4 @@ SceneRoots:
   - {fileID: 741626262}
   - {fileID: 1524953227}
   - {fileID: 1162498936}
+  - {fileID: 1663924997}
