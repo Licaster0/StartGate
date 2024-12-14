@@ -1,31 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 public class Leke : MonoBehaviour
 {
-    [SerializeField] private int currentPaper = 0;
-    [SerializeField] private int scenePaperCount;
-    [SerializeField] private bool canFinish;
-    private void Start()
+    [SerializeField] private Vileda vileda; // Vileda referansı
+    [SerializeField] private ParticleSystem freshFx; // Temizlik efekti
+
+    private bool isCollected = false; // Lekeyi temizleme izni
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        canFinish = false;
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Leke"))
+        if (other.CompareTag("Player"))
         {
-            collision.gameObject.SetActive(false);
-            currentPaper++;
-            if (currentPaper == scenePaperCount)
+            // Eğer Vileda birleştirildiyse temizlemeye izin ver
+            if (vileda != null && vileda.isAssembled)
             {
-                canFinish = true;
+                isCollected = true;
+                Debug.Log("E tuşuna basarak bu lekeyi temizleyebilirsiniz.");
             }
-        }
-        if (canFinish)
-        {
-            SceneManager.LoadScene(2);
+            else
+            {
+                isCollected = false;
+                Debug.Log("Lekeyi temizlemek için önce tüm Vileda parçalarını toplamalısınız.");
+            }
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && isCollected)
+        {
+            // Temizlik işlemi
+            freshFx.transform.position = transform.position;
+            freshFx.Play();
+            Destroy(gameObject); // Lekeyi yok et
+
+            // LekeManager'a bildir
+            LekeParts.Instance.LekeTemizlendi();
+        }
+    }
 }

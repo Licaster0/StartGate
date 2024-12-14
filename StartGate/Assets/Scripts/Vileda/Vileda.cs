@@ -6,6 +6,7 @@ public class Vileda : MonoBehaviour
 {
     public ViledaParts[] parts; // Tüm parçaları bu diziye atayın
     public int collectedPartsCount = 0; // Toplanan parçaların sayısını takip eder
+    public bool isAssembled = false; // Vileda'nın birleştirilip birleştirilmediğini kontrol eder
 
     public void OnPartCollected()
     {
@@ -20,7 +21,8 @@ public class Vileda : MonoBehaviour
 
     private void AssembleVileda()
     {
-        // Birleştirme işlemi burada yapılabilir
-        gameObject.SetActive(true); // Örneğin, Vileda'yı sahnede göster
+        isAssembled = true; // Vileda artık hazır
+        Debug.Log("Vileda birleştirildi! Lekeleri temizleyebilirsiniz.");
+        gameObject.SetActive(true); // Vileda sahnede görünebilir (isteğe bağlı)
     }
 }
