@@ -10710,6 +10710,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6719089869292815197, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9219615441794256930, guid: 8713681159843544fb223c12cf6173bf, type: 3}
       propertyPath: m_Enabled
       value: 1
