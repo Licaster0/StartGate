@@ -54,7 +54,7 @@ public class LampCollScript : MonoBehaviour
         Debug.Log("1");
 
         yield return new WaitForSeconds(2.7f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         Debug.Log("4");
 
     }
