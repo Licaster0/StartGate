@@ -43,14 +43,13 @@ public class PhonesManager : MonoBehaviour
     }
     public IEnumerator Delay()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         GameManager.Instance.fadeScreen.FadeOut();
-        CreateBook();
         StartCoroutine(DelayScene());
     }
     public IEnumerator DelayScene()
     {
-        yield return new WaitForSeconds(2.7f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(2);
     }
     public void CreateBook()
