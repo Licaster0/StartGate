@@ -25,7 +25,7 @@ public class PhonesManager : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Finishh") && canFinish)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
 }
