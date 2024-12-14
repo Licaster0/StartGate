@@ -1165,6 +1165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPlatformer
       objectReference: {fileID: 0}
+    - target: {fileID: 5301838316660105988, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
+      propertyPath: grappleLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5356973253961468860, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.87
@@ -1204,6 +1208,14 @@ PrefabInstance:
     - target: {fileID: 5356973253961468860, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171636876117876810, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
+      propertyPath: HookLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171636876117876810, guid: 559373a08e0229047a050e74bfc685aa, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 2112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
