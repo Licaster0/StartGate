@@ -6,7 +6,6 @@ public class fallPlatform : MonoBehaviour
 {
     public float fadeDuration = 1.5f; // Opaklýðýn azalacaðý süre
     public GameObject dustEffect; // Toz efekti Prefab'i
-
     private SpriteRenderer spriteRenderer;
     private bool isFading = false;
     private Rigidbody2D rb;
@@ -15,6 +14,7 @@ public class fallPlatform : MonoBehaviour
 
     private void Start()
     {
+
         spriteRenderer = GetComponent<SpriteRenderer>(); // Platformun Sprite Renderer'ýný al
         rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Static; // Baþlangýçta platform hareket etmesin
@@ -26,8 +26,11 @@ public class fallPlatform : MonoBehaviour
         {
             //StartCoroutine(FadeOut()); // Opaklýk azaltma iþlemini baþlat
             Invoke("Fall", fallDelay); // Gecikmeli düþme
+            isFading = true;
         }
+
     }
+
     private void Fall()
     {
         if (dustEffect != null)
@@ -35,9 +38,13 @@ public class fallPlatform : MonoBehaviour
             Instantiate(dustEffect, transform.position, Quaternion.identity);
         }
         rb.bodyType = RigidbodyType2D.Dynamic; // Rigidbody'yi serbest býrak
+        Invoke("fallStatic", 4f);
         //Destroy(gameObject, destroyDelay); // Belirli bir süre sonra platformu yok et
     }
-
+    void fallStatic()
+    {
+        rb.bodyType = RigidbodyType2D.Static; // Rigidbody'yi serbest býrak
+    }
     private IEnumerator FadeOut()
     {
         isFading = true;
