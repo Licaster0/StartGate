@@ -46,16 +46,7 @@ public class GrapplingHook : MonoBehaviour
     {
         if (isGrappling)
         {
-            float distance = Vector2.Distance(transform.position, grapplePosition);
-
-            if (distance > 0.5f) // Hedefe yeterince yaklaþmadýysa çek
-            {
-                ApplyGrappleForce();
-            }
-            else
-            {
-                StopGrappling(); // Hedefe ulaþtýysa dur
-            }
+            ApplyGrappleForce();
         }
     }
 
@@ -98,21 +89,20 @@ public class GrapplingHook : MonoBehaviour
 
     private void ApplyGrappleForce()
     {
-        // Çekme yönü: Baðlanma noktasýna doðru normalize edilmiþ vektör
+        // Karakteri baðlanýlan noktaya doðru çeken kuvvet
         Vector2 direction = (grapplePosition - (Vector2)transform.position).normalized;
 
-        // Çekme kuvveti uygulama
-        rb.velocity = direction * pullForce;
+        // Çekme kuvveti
+        rb.AddForce(direction * pullForce);
 
-        // Eðer sallanma istiyorsan ekle
-        if (Input.GetKey(KeyCode.A)) // Sol sallanma
+        // Eðer sallanma eklemek istersen:
+        if (Input.GetKey(KeyCode.A)) // Sol yön tuþuyla sallanma
         {
             rb.AddForce(Vector2.left * swingForce);
         }
-        else if (Input.GetKey(KeyCode.D)) // Sað sallanma
+        else if (Input.GetKey(KeyCode.D)) // Sað yön tuþuyla sallanma
         {
             rb.AddForce(Vector2.right * swingForce);
         }
     }
-
 }
