@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         originalScale = transform.localScale;
-        rb =this.gameObject.GetComponent<Rigidbody2D>();
+        rb = this.gameObject.GetComponent<Rigidbody2D>();
 
     }
     private void Update()
@@ -25,11 +25,20 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 normalizedMovement = movement.normalized;
 
+        if (movement.x != 0)
+        {
+            animator.MoveOnAnimator();
+        }
+        else
+        {
+            animator.StopOnAnimator();
+        }
+
         rb.MovePosition(rb.position + normalizedMovement * moveSpeed * Time.fixedDeltaTime);
 
         if (movement.x > 0)
         {
-            // Saða gidiyorsa
+            // Saï¿½a gidiyorsa
             transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
         }
         else if (movement.x < 0)
