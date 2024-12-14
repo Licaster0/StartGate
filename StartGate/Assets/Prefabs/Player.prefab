@@ -16,10 +16,8 @@ GameObject:
   - component: {fileID: -1208634420816329907}
   - component: {fileID: 1657298406379276495}
   - component: {fileID: 9219615441794256930}
-  - component: {fileID: 4339513108527545903}
   - component: {fileID: 6537501886028201084}
   - component: {fileID: 5780961295875499277}
-  - component: {fileID: 2021505025454561588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -82,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 4d12e3b5e05e9764886892ca67f0f1f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -178,41 +176,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6537501886028201084}
 --- !u!70 &9219615441794256930
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458179164398388341}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.58, y: 6.62}
-  m_Direction: 0
---- !u!70 &4339513108527545903
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -364,42 +327,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2021505025454561588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458179164398388341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d1c42cbfa808f40904632efc05aa15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 0}
-  dialogues:
-  - Benim adim Zumra.
-  - Annem bana ananesinin ismini vermis.
-  - Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
-  - Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
-  - Bugune kadar cok guzel bir hayatim olmadi ve bunda benim payim var.
-  - Bir katil veya hirsiz degilim,
-  - Ama gecmisim beni urkutecek derece karanlik...
-  - Ama gecmisim beni urkutecek derece karanlik...
-  - Bu sucluluk duygusunu ustumden atamiyorum, Allah kahretsin!
-  - Belki bir yolu vardi,
-  - Belki icimde bulundugum karanliktan cikmam icin bir kapiyi acmam yeterliydi,
-    kim bilir...
-  - Bazen uyuyamadigim gecelerin sabahi balkona cikiyorum.
-  - Bir yavru kusu ve annesini oterken goruyorum.
-  - Bu benim icin azaplarin en buyugu oluveriyor birden.
-  - Keske, anne, senin istedigin gibi biri olabilseydim.
-  - Eski sevgilim, keske sana gereken vakti ve ilgiyi verebilseydim.
-  - 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak yenmeseydim.
-  - 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak yenmeseydim.
-  - "Keske, keske, keske\u2026"
-  - Ama belki bir yolu hala vardir?
-  typingSpeed: 0.09
-  audioSource: {fileID: 0}
-  typingSound: {fileID: 8300000, guid: 0ad46db4f6ae56f4a9bb4a8f35043c56, type: 3}
-  soundVolume: 0.2
