@@ -6,6 +6,7 @@ public class PlayerImpact : MonoBehaviour
     public TextMeshProUGUI text;
     private ICollectable currentCollectable;
     public GameObject memoryBookPrefab;
+    [SerializeField] private Transform bookTransform;
     private void OnTriggerEnter2D(Collider2D col)
     {
         ICollectable Icollectable = col.GetComponent<ICollectable>();
@@ -40,7 +41,6 @@ public class PlayerImpact : MonoBehaviour
 
     public void CreateBook()
     {
-        GameObject memoryBook = Instantiate(memoryBookPrefab, transform.position, Quaternion.identity);
-        memoryBook.GetComponent<MemoryBook>().Initialize(transform);
+        GameObject memoryBook = Instantiate(memoryBookPrefab, bookTransform.position, Quaternion.identity);
     }
 }
