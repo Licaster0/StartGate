@@ -17,12 +17,12 @@ public class Leke : MonoBehaviour
             if (vileda != null && vileda.isAssembled)
             {
                 isCollected = true;
-                Debug.Log("E tuşuna basarak bu lekeyi temizleyebilirsiniz.");
+                GameManager.Instance.text.text = "Lekeyi temizlemek için 'E' tuşuna basın.";
             }
             else
             {
                 isCollected = false;
-                Debug.Log("Lekeyi temizlemek için önce tüm Vileda parçalarını toplamalısınız.");
+                GameManager.Instance.text.text = "Vileda'yı birleştirmeden lekeyi temizleyemezsiniz.";
             }
         }
     }
