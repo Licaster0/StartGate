@@ -25,11 +25,16 @@ public class PlayerMovementPlatformer : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
-        spriteRenderer = GetComponent<SpriteRenderer>();    
+        spriteRenderer = GetComponent<SpriteRenderer>();
         // Animator'ý almak
         animator = GetComponent<Animator>();
-    }
+        StartCoroutine(FadeInStart());
 
+    }
+    private IEnumerator FadeInStart()
+    {
+        yield return StartCoroutine(FadeIn());
+    }
     void Update()
     {
         animator.SetFloat("speed", Vector2.ClampMagnitude(rb.velocity, 1).magnitude);
