@@ -7,7 +7,7 @@ public class ESCMenuScript : MonoBehaviour
 {
     public GameObject pauseMenuPanel; // Menü panelini buraya atayacaðýz.
     private bool isPaused = false; // Menü durumu
-
+    public GameObject Fullpanel;
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -46,6 +46,7 @@ public class ESCMenuScript : MonoBehaviour
         SceneManager.LoadScene(0);
         pauseMenuPanel.gameObject.SetActive(false);
         Canvas.Instance.isSettingsPanelVisible = false;
+        Destroy(Fullpanel);
     }
     public void Quit()
     {
