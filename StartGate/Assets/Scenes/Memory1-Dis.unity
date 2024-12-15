@@ -10181,7 +10181,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 19.569824, y: -17.939087}
-  m_SizeDelta: {x: 818.0807, y: 107.0787}
+  m_SizeDelta: {x: 818.0807, y: 131.3749}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2093204119
 MonoBehaviour:
@@ -10203,7 +10203,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vileda Parcalarini Topla
+  m_text: 'Vileda Parcalarini Topla
+
+    Lekeleri Temizle
+
+    Bulmacayi Coz'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
