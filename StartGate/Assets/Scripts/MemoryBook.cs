@@ -54,7 +54,14 @@ public class MemoryBook : MonoBehaviour
         {
             MoveAndPullPlayer();
             Initialize(player);
-            StartCoroutine(GameManager.Instance.ChangeScene());
+
+            if (GameManager.Instance.nextSceneIndex != 0)
+                StartCoroutine(GameManager.Instance.ChangeScene());
+
+
+            ICollectable collectable = GetComponent<ICollectable>();
+            if (collectable != null)
+                collectable.Collect();
         }
     }
 
