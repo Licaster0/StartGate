@@ -5072,7 +5072,7 @@ PrefabInstance:
     - target: {fileID: 745519537981066286, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 00f988a4b7ca00044b2100aeac97d9af, type: 3}
+      objectReference: {fileID: 8300000, guid: a86d805e159ac9b43ad884fe0e34bd72, type: 3}
     - target: {fileID: 1327666495384762942, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
       propertyPath: m_Name
       value: GameMusic
