@@ -1303,47 +1303,47 @@ PrefabInstance:
       objectReference: {fileID: 743284299}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.size
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: "Uzun bir s\xFCredir i\u015F tempomun yo\u011Funlu\u011Fu sebebiyle
-        sevgilime vakit ay\u0131ram\u0131yordun."
+      value: "Uzun bir s\xFCredir is tempomun yogunlugu sebebiyle sevgilime vakit
+        ayiramiyordum."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: "Bana ihtiyac\u0131 oldu\u011Fu zamanlarda bile yan\u0131nda olamad\u0131m."
+      value: Bana ihtiyaci oldugu zamanlarda bile yaninda olamadim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: "Bir g\xFCn benden telefon \u015Fifremi isted."
+      value: "Bir g\xFCn benden telefon sifremi istedi."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: "Bask\u0131land\u0131\u011F\u0131m\u0131 hissettim ve ani bir sinirle
-        kaba bir \u015Fekilde reddettim."
+      value: Baskilandigimi hissettim ve ani bir sinirle kaba bir sekilde reddettim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: "Bu barda\u011F\u0131 ta\u015F\u0131ran son damla oldu"
+      value: Bu bardagi tasiran son damla oldu.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: "Sevgilim art\u0131k ona g\xFCven bile duymad\u0131\u011F\u0131m\u0131
-        ve ili\u015Fkimiz bitirmek istedi\u011Fini s\xF6yledi."
+      value: "Sevgilim artik ona guven bile duymadigimi ve iliskimiz bitirmek istedigini
+        s\xF6yledi."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[6]
-      value: "O an \"madem b\xF6yle olsun istiyorsun\" diyerek onunla kavga ettim."
+      value: Hakliydi...
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[7]
-      value: "Ama o hakl\u0131yd\u0131..."
+      value: "Onunla sifremi ve vaktimi paylasmam gerektigini simdi anliyorum,keske
+        geri d\xF6nebilsem..."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[8]
-      value: "Onunla \u015Fifremi ve vaktimi payla\u015Fmam gerekti\u011Fini \u015Fimdi
-        anl\u0131yorum,ke\u015Fke geri d\xF6nebilsem..."
+      value: "Onunla sifremi ve vaktimi paylasmam gerektigini simdi anliyorum,keske
+        geri d\xF6nebilsem..."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[9]
