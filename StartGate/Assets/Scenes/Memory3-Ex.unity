@@ -1367,6 +1367,7 @@ MonoBehaviour:
   player: {fileID: 0}
   fadeScreen: {fileID: 916611370}
   text: {fileID: 672340407}
+  nextSceneIndex: 0
 --- !u!4 &544966314
 Transform:
   m_ObjectHideFlags: 0
@@ -1871,18 +1872,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.38838196, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 6.85, y: 3.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7.901248, y: 4.2550626}
   m_EdgeRadius: 0
 --- !u!212 &815894365
 SpriteRenderer:
@@ -1925,7 +1926,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 038c5cb4b1375fb4782bc121d9c65909, type: 3}
   m_Color: {r: 1, g: 0.27735847, b: 0.27735847, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1945,8 +1946,8 @@ Transform:
   m_GameObject: {fileID: 815894363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.83, y: -5.41, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 37.26, y: -4.97, z: 0}
+  m_LocalScale: {x: 0.6410546, y: 0.6410546, z: 0.6410546}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1340163561}
