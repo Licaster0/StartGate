@@ -21,14 +21,12 @@ public class Transparent : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Player tag'li bir obje bulunamadı!");
         }
 
         // SpriteRenderer bileşenini alıyoruz
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
         {
-            Debug.LogError("Bu obje bir SpriteRenderer bileşenine sahip olmalı!");
         }
     }
 

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PuzzleManager : MonoBehaviour
 {
     private bool isPuzzleSolved = false;
-    private bool isBookOpen = false;
+    public bool isBookOpen = false;
 
     [SerializeField] private GameObject puzzle;
 
@@ -46,7 +46,6 @@ public class PuzzleManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("Restarting scene...");
             RestartScene();
         }
         if (!isPuzzleSolved && p1.transform.position == p1pos.position && p2.transform.position == p2pos.position && p3.transform.position == p3pos.position && p4.transform.position == p4pos.position && p5.transform.position == p5pos.position)
@@ -59,8 +58,8 @@ public class PuzzleManager : MonoBehaviour
             isBookOpen = true;
             GameManager.Instance.CreateBook();
             GameManager.Instance.player.moveSpeed = 5;
-            GameManager.Instance.text.text = "Puzzle Solved! Gate is open!";
-            Destroy(puzzle);
+            GameManager.Instance.text.text = "Bulmacayi cozdun ve gecidi actin. Gecidi kullanarak evine don.";
+            puzzle.SetActive(false);
         }
     }
 }

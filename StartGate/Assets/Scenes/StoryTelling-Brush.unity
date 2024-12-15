@@ -1246,19 +1246,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: "Bir sabah, annem bana 'Yerlere Vileda yap' demis\u0327ti."
+      value: Bir sabah, annem bana 'Yerlere Vileda yap' demisti.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: "O an isim oldugu icin 'Aksama yapar\u0131m' diye gecistirdim"
+      value: O an isim oldugu icin 'Aksama yaparim' diye gecistirdim
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: "Ancak o kadar yogunlast\u0131m ki, zamanla bunu tamamen unuttum."
+      value: Ancak o kadar yogunlastim ki, zamanla bunu tamamen unuttum.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: "O gun aksam geldiginde, annemin beni hat\u0131rlatmas\u0131 u\u0308zerine,"
+      value: O gun aksam geldiginde, annemin beni hatirlatmasi uzerine,
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[4]

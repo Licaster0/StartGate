@@ -8,7 +8,7 @@ public class Medal : MonoBehaviour, ICollectable
     public TMP_Text m_Text;
     public void Collect()
     {
-        m_Text.text = "Bu madalyayı hiç haketmemiştim";
+        m_Text.text = "Bu madalyayi hic haketmemistim";
         StartCoroutine(enumerator());
     }
     private IEnumerator enumerator()
