@@ -618,6 +618,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6159357983687416242, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: m_Name
+      value: 'biliyordum '
+      objectReference: {fileID: 0}
     - target: {fileID: 6571719971571670229, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.64
@@ -657,6 +661,28 @@ PrefabInstance:
     - target: {fileID: 6571719971571670229, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042928193126701011, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: m_text
+      value: duzeltecegini
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042928193126701011, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: m_fontSize
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042928193126701011, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124011914250853140, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: m_text
+      value: 'anlayip
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675126714209758699, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: m_text
+      value: hatani
       objectReference: {fileID: 0}
     - target: {fileID: 7899939851044246526, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: trembleSpeed

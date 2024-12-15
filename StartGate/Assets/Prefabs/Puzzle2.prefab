@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 89040475650544348}
   - component: {fileID: 8497914428963624584}
   m_Layer: 0
-  m_Name: "y\xFCr\xFCken"
+  m_Name: "d\xFCzeltece\u011Fini"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "y\xFCr\xFCrken"
+  m_text: "d\xFCzeltece\u011Fini\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -708,6 +708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6b74f90ac052e4d9a8362f252ce732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzle: {fileID: 0}
+  isPussleSolved: 0
+  isBookOpen: 0
   k1: {fileID: 3965902796395702798}
   k2: {fileID: 6918509484470477450}
   k3: {fileID: 6972705542437809014}
@@ -1309,7 +1312,7 @@ GameObject:
   - component: {fileID: 5169380028709894535}
   - component: {fileID: 6761839415071456931}
   m_Layer: 0
-  m_Name: yerleri
+  m_Name: "hatan\u0131"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1396,7 +1399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yerleri
+  m_text: "hatan\u0131"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1832,7 +1835,7 @@ GameObject:
   - component: {fileID: 330171313679039801}
   - component: {fileID: 2027913786351749652}
   m_Layer: 0
-  m_Name: biliyorsun
+  m_Name: durumu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1919,7 +1922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: biliyorsun
+  m_text: durumu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2194,7 +2197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: zorlaniyorum
+  m_text: 'biliyordum '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2657,7 +2660,7 @@ GameObject:
   - component: {fileID: 3199401584000211247}
   - component: {fileID: 3589295047386867054}
   m_Layer: 0
-  m_Name: lutfen
+  m_Name: bir gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2744,7 +2747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "l\xFCtfen"
+  m_text: bir gun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2932,7 +2935,7 @@ GameObject:
   - component: {fileID: 2952973884422730365}
   - component: {fileID: 9031234665223686098}
   m_Layer: 0
-  m_Name: silmeyi
+  m_Name: "anlay\u0131p"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3019,7 +3022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: silmeyi
+  m_text: "anlay\u0131p\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3207,7 +3210,7 @@ GameObject:
   - component: {fileID: 118154993512432655}
   - component: {fileID: 6496119130109422450}
   m_Layer: 0
-  m_Name: unutma
+  m_Name: bu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3294,7 +3297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: unutma
+  m_text: bu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
