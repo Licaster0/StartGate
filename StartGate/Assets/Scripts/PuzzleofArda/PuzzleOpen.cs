@@ -33,7 +33,6 @@ public class PuzzleOpen : MonoBehaviour
             GameManager.Instance.player.moveSpeed = 0;
             GameManager.Instance.text.text = "";
         }
-
         if (puzzle.activeSelf && Input.GetKeyDown(KeyCode.Escape))
         {
             puzzle.SetActive(false);

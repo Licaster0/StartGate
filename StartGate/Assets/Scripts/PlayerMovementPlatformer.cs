@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,22 +10,22 @@ public class PlayerMovementPlatformer : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpingPower;
     private bool isFacingRight = true;
-    private Vector3 startPosition; // Oyuncunun baþlangýç pozisyonu
+    private Vector3 startPosition; // Oyuncunun baï¿½langï¿½ï¿½ pozisyonu
     private float groundCheckRadius;
-    private SpriteRenderer spriteRenderer; // Görünmezlik için SpriteRenderer
-    public TextMeshProUGUI promptText; // UI elemanýný burada referansla al
+    private SpriteRenderer spriteRenderer; // Gï¿½rï¿½nmezlik iï¿½in SpriteRenderer
+    public TextMeshProUGUI promptText; // UI elemanï¿½nï¿½ burada referansla al
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     private Animator animator;
     private bool isJumping = false;
-    private bool wasGrounded = false; // Yere deðip deðmediðini kontrol et
+    private bool wasGrounded = false; // Yere deï¿½ip deï¿½mediï¿½ini kontrol et
 
     void Start()
     {
         startPosition = transform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        // Animator'ý almak
+        // Animator'ï¿½ almak
         animator = GetComponent<Animator>();
         StartCoroutine(FadeInStart());
     }
@@ -38,33 +37,33 @@ public class PlayerMovementPlatformer : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        // Yere deðiyor mu?
+        // Yere deï¿½iyor mu?
         bool isGrounded = IsGrounded();
 
-        // Yere deðmiyorsa ve daha önce yere deðmiþse Jump animasyonunu baþlat
+        // Yere deï¿½miyorsa ve daha ï¿½nce yere deï¿½miï¿½se Jump animasyonunu baï¿½lat
         if (!isGrounded && wasGrounded)
         {
-            SetJumpingAnimation(true);  // Jump animasyonunu baþlat
+            SetJumpingAnimation(true);  // Jump animasyonunu baï¿½lat
         }
 
-        // Eðer zýplama yapýlýyorsa, Jump animasyonunu baþlat
+        // Eï¿½er zï¿½plama yapï¿½lï¿½yorsa, Jump animasyonunu baï¿½lat
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            SetJumpingAnimation(true);  // Jump animasyonunu baþlat
+            SetJumpingAnimation(true);  // Jump animasyonunu baï¿½lat
         }
 
-        // Zýplama sona erdiðinde yere deðiyorsa, Jump animasyonunu bitir
+        // Zï¿½plama sona erdiï¿½inde yere deï¿½iyorsa, Jump animasyonunu bitir
         if (isGrounded && !wasGrounded && rb.velocity.y <= 0)
         {
             SetJumpingAnimation(false);  // Jump animasyonunu bitir
         }
 
-        // Yere deðdiði her frame'de, bu bilgiyi kaydet
+        // Yere deï¿½diï¿½i her frame'de, bu bilgiyi kaydet
         wasGrounded = isGrounded;
 
         animator.SetFloat("speed", Mathf.Abs(horizontal)); // Hareket animasyonu
-        Flip(); // Yön deðiþtirme
+        Flip(); // Yï¿½n deï¿½iï¿½tirme
     }
 
     // Jump animasyonunu kontrol et
@@ -80,7 +79,7 @@ public class PlayerMovementPlatformer : MonoBehaviour
 
     private bool IsGrounded()
     {
-        // Yer kontrolü için OverlapCircle kullanýyoruz, yerle temas edip etmediðini tespit ediyoruz
+        // Yer kontrolï¿½ iï¿½in OverlapCircle kullanï¿½yoruz, yerle temas edip etmediï¿½ini tespit ediyoruz
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -103,25 +102,25 @@ public class PlayerMovementPlatformer : MonoBehaviour
 
     private IEnumerator SmoothResetPosition()
     {
-        // 1. Fade Out (Küçülme ve görünmez olma)
+        // 1. Fade Out (Kï¿½ï¿½ï¿½lme ve gï¿½rï¿½nmez olma)
         yield return StartCoroutine(FadeOut());
 
-        // Pozisyonu baþlangýç pozisyonuna sýfýrla
+        // Pozisyonu baï¿½langï¿½ï¿½ pozisyonuna sï¿½fï¿½rla
         transform.position = startPosition;
 
-        // 2. Fade In (Yavaþça büyüyerek görünür olma)
+        // 2. Fade In (Yavaï¿½ï¿½a bï¿½yï¿½yerek gï¿½rï¿½nï¿½r olma)
         yield return StartCoroutine(FadeIn());
     }
 
-    // Fade Out (Görünmez Olma) Methodu
+    // Fade Out (Gï¿½rï¿½nmez Olma) Methodu
     private IEnumerator FadeOut()
     {
-        float shrinkDuration = 0.5f; // Küçülme süresi
+        float shrinkDuration = 0.5f; // Kï¿½ï¿½ï¿½lme sï¿½resi
         float elapsed = 0f;
 
         Vector3 originalScale = transform.localScale;
 
-        // Rigidbody hýzýný sýfýrla
+        // Rigidbody hï¿½zï¿½nï¿½ sï¿½fï¿½rla
         if (rb != null)
         {
             rb.velocity = Vector2.zero;
@@ -131,21 +130,21 @@ public class PlayerMovementPlatformer : MonoBehaviour
         while (elapsed < shrinkDuration)
         {
             float t = elapsed / shrinkDuration;
-            transform.localScale = Vector3.Lerp(originalScale, Vector3.zero, t); // Küçülme
-            spriteRenderer.color = new Color(1, 1, 1, 1 - t); // Görünmez olma
+            transform.localScale = Vector3.Lerp(originalScale, Vector3.zero, t); // Kï¿½ï¿½ï¿½lme
+            spriteRenderer.color = new Color(1, 1, 1, 1 - t); // Gï¿½rï¿½nmez olma
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        transform.localScale = Vector3.zero; // Tamamen küçül
-        spriteRenderer.color = new Color(1, 1, 1, 0); // Tamamen görünmez
+        transform.localScale = Vector3.zero; // Tamamen kï¿½ï¿½ï¿½l
+        spriteRenderer.color = new Color(1, 1, 1, 0); // Tamamen gï¿½rï¿½nmez
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    // Fade In (Görünür Olma) Methodu
+    // Fade In (Gï¿½rï¿½nï¿½r Olma) Methodu
     private IEnumerator FadeIn()
     {
-        float growDuration = 0.5f; // Büyüme süresi
+        float growDuration = 0.5f; // Bï¿½yï¿½me sï¿½resi
         float elapsed = 0f;
 
         Vector3 originalScale = transform.localScale;
@@ -153,14 +152,14 @@ public class PlayerMovementPlatformer : MonoBehaviour
         while (elapsed < growDuration)
         {
             float t = elapsed / growDuration;
-            transform.localScale = Vector3.Lerp(Vector3.zero, originalScale, t); // Büyüme
-            spriteRenderer.color = new Color(1, 1, 1, t); // Görünür olma
+            transform.localScale = Vector3.Lerp(Vector3.zero, originalScale, t); // Bï¿½yï¿½me
+            spriteRenderer.color = new Color(1, 1, 1, t); // Gï¿½rï¿½nï¿½r olma
             elapsed += Time.deltaTime;
             yield return null;
         }
 
         transform.localScale = originalScale; // Orijinal boyut
-        spriteRenderer.color = new Color(1, 1, 1, 1); // Tamamen görünür
+        spriteRenderer.color = new Color(1, 1, 1, 1); // Tamamen gï¿½rï¿½nï¿½r
     }
     private void Flip()
     {
@@ -177,11 +176,11 @@ public class PlayerMovementPlatformer : MonoBehaviour
     //{
     //    if (collision.CompareTag("Gate"))
     //    {
-    //        promptText.text = "Press E Key"; // UI öðesine metin atamasý
+    //        promptText.text = "Press E Key"; // UI ï¿½ï¿½esine metin atamasï¿½
     //    }
     //    else
     //    {
-    //        Debug.Log("Gate deðil");
+    //        Debug.Log("Gate deï¿½il");
     //    }
     //}
 
@@ -196,7 +195,7 @@ public class PlayerMovementPlatformer : MonoBehaviour
     //    }
     //    else
     //    {
-    //        Debug.Log("Gate deðil");
+    //        Debug.Log("Gate deï¿½il");
     //    }
     //}
 
@@ -204,15 +203,15 @@ public class PlayerMovementPlatformer : MonoBehaviour
     //{
     //    if (collision.CompareTag("Gate"))
     //    {
-    //        promptText.text = ""; // UI öðesindeki metni temizle
+    //        promptText.text = ""; // UI ï¿½ï¿½esindeki metni temizle
     //    }
     //    else
     //    {
-    //        Debug.Log("Gate deðil");
+    //        Debug.Log("Gate deï¿½il");
     //    }
     //}
 
-    //// Yer kontrolü için çizim
+    //// Yer kontrolï¿½ iï¿½in ï¿½izim
     //private void OnDrawGizmos()
     //{
     //    Gizmos.color = Color.red;
