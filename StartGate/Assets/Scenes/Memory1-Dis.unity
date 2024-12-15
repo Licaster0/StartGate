@@ -378,6 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c830c1298c1c9c4f9f44f8d6d7469c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBookOpen: 0
   puzzle: {fileID: 1142647088}
   p1: {fileID: 1577609144}
   p2: {fileID: 1345972512}
@@ -3621,6 +3622,7 @@ MonoBehaviour:
   puzzle: {fileID: 1142647088}
   lekeParts: {fileID: 1144896498}
   Tringle: {fileID: 1170224234}
+  puzzleManager: {fileID: 140671493}
 --- !u!61 &1524432896
 BoxCollider2D:
   m_ObjectHideFlags: 0

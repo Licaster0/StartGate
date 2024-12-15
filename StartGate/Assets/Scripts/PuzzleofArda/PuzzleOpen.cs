@@ -9,11 +9,12 @@ public class PuzzleOpen : MonoBehaviour
     [SerializeField] private LekeParts lekeParts;
     private bool isPuzzleOpen = false;
     [SerializeField] private GameObject Tringle;
+    [SerializeField] private PuzzleManager puzzleManager;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && lekeParts.cleanedLekes >= lekeParts.totalLekes)
         {
-            GameManager.Instance.text.text = "Puzzle'ı Açmak İçin E Tuşuna Bas!";
+            GameManager.Instance.text.text = "Puzzle'i Acmak Icin E Tusuna Bas!";
             isPuzzleOpen = true;
             Tringle.SetActive(true);
         }
@@ -30,13 +31,13 @@ public class PuzzleOpen : MonoBehaviour
 
     private void Update()
     {
-        if (isPuzzleOpen && Input.GetKeyDown(KeyCode.E))
+        if (!puzzleManager.isBookOpen && isPuzzleOpen && Input.GetKeyDown(KeyCode.E))
         {
             puzzle.SetActive(true);
             GameManager.Instance.player.moveSpeed = 0;
             GameManager.Instance.text.text = "";
         }
-        if (puzzle.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             puzzle.SetActive(false);
             GameManager.Instance.player.moveSpeed = 5;

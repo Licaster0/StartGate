@@ -45,7 +45,6 @@ public class MemoryBook : MonoBehaviour
 
 
         yield return new WaitForSeconds(0.5f);
-        Debug.Log("Sonraki Sahne");
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -26,18 +26,16 @@ public class LekeParts : MonoBehaviour
     {
         // Sahnedeki tüm "Leke" objelerini say
         totalLekes = FindObjectsOfType<Leke>().Length;
-        Debug.Log($"Toplam leke sayısı: {totalLekes}");
     }
 
     public void LekeTemizlendi()
     {
         cleanedLekes++; // Temizlenen leke sayısını artır
-        Debug.Log($"Temizlenen lekeler: {cleanedLekes}/{totalLekes}");
 
         // Tüm lekeler temizlendiyse sahneyi değiştir
         if (cleanedLekes >= totalLekes)
         {
-            GameManager.Instance.text.text = "Tüm Lekeler Temizlendi Geçiti Aktif Et!";
+            GameManager.Instance.text.text = "Tum Lekeler Temizlendi Geciti Aktif Et!";
         }
     }
 }

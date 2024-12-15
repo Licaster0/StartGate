@@ -13,7 +13,7 @@ public class ViledaParts : MonoBehaviour
     {
         if (other.CompareTag("Player") && !isCollected)
         {
-            GameManager.Instance.text.text = "Press E to pick up this part.";
+            GameManager.Instance.text.text = "Toplamak icin E'ye tikla.";
         }
     }
 

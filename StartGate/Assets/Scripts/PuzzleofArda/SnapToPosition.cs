@@ -18,9 +18,7 @@ public class SnapToPosition : MonoBehaviour
         {
             transform.position = targetPosition.position; // Parçayı hedefe sabitle
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            rb.isKinematic = true;
-            
-            
+            rb.isKinematic = true;  
         }
         
     }

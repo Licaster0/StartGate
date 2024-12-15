@@ -23,7 +23,7 @@ public class SoundEffectManager : MonoBehaviour
         audioSource.clip = audioClip;
         audioSource.volume = volume;
 
-        // Eðer rastgele pitch isteniyorsa, deðer ayarla
+        // Eï¿½er rastgele pitch isteniyorsa, deï¿½er ayarla
         if (randomizePitch)
         {
             audioSource.pitch = Random.Range(0.8f, 1.2f);
@@ -41,7 +41,7 @@ public class SoundEffectManager : MonoBehaviour
         audioSource.clip = audioClips[rand];
         audioSource.volume = volume;
 
-        // Eðer rastgele pitch isteniyorsa, deðer ayarla
+        // Eï¿½er rastgele pitch isteniyorsa, deï¿½er ayarla
         if (randomizePitch)
         {
             audioSource.pitch = Random.Range(0.8f, 1.2f);

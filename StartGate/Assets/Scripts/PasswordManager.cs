@@ -3,49 +3,49 @@ using UnityEngine.UI;
 
 public class PasswordManager : MonoBehaviour
 {
-    public InputField inputField;  // Kullanýcýnýn girdiði þifreyi gösterecek.
-    public Text statusText;       // Durum mesajlarýný gösterecek.
-    public string correctPassword = "1234"; // Doðru þifre.
+    public InputField inputField;  // Kullanï¿½cï¿½nï¿½n girdiï¿½i ï¿½ifreyi gï¿½sterecek.
+    public Text statusText;       // Durum mesajlarï¿½nï¿½ gï¿½sterecek.
+    public string correctPassword = "1234"; // Doï¿½ru ï¿½ifre.
 
-    private string enteredPassword = ""; // Kullanýcýnýn girdiði þifre.
+    private string enteredPassword = ""; // Kullanï¿½cï¿½nï¿½n girdiï¿½i ï¿½ifre.
 
-    // Tuþlara basýldýðýnda çaðrýlýr.
+    // Tuï¿½lara basï¿½ldï¿½ï¿½ï¿½nda ï¿½aï¿½rï¿½lï¿½r.
     public void OnNumberButtonClick(string number)
     {
         if (enteredPassword.Length < 10) // Maksimum 10 karakter.
         {
             enteredPassword += number;
-            inputField.text = enteredPassword; // Þifreyi ekranda göster.
+            inputField.text = enteredPassword; // ï¿½ifreyi ekranda gï¿½ster.
         }
     }
 
-    // "OK" butonuna basýldýðýnda çaðrýlýr.
+    // "OK" butonuna basï¿½ldï¿½ï¿½ï¿½nda ï¿½aï¿½rï¿½lï¿½r.
     public void OnOkButtonClick()
     {
         if (enteredPassword == correctPassword)
         {
-            statusText.text = "Þifre doðru! Level geçti.";
-            // Yeni levele geçmek için iþlemler burada yapýlabilir.
+            statusText.text = "Sifre dogru! Yeni levele geciyorsunuz.";
+            // Yeni levele geï¿½mek iï¿½in iï¿½lemler burada yapï¿½labilir.
             LoadNextLevel();
         }
         else
         {
-            statusText.text = "Yanlýþ þifre! Tekrar deneyin.";
+            statusText.text = "Sifre yanlis! Tekrar deneyin.";
             enteredPassword = "";
-            inputField.text = ""; // InputField'ý temizle.
+            inputField.text = ""; // InputField'ï¿½ temizle.
         }
     }
 
-    // "Clear" butonuna basýldýðýnda çaðrýlýr.
+    // "Clear" butonuna basï¿½ldï¿½ï¿½ï¿½nda ï¿½aï¿½rï¿½lï¿½r.
     public void OnClearButtonClick()
     {
         enteredPassword = "";
-        inputField.text = ""; // InputField'ý temizle.
+        inputField.text = ""; // InputField'ï¿½ temizle.
     }
 
     private void LoadNextLevel()
     {
-        // Yeni sahneyi yükleme iþlemi.
-        // Örneðin: SceneManager.LoadScene("NextLevelSceneName");
+        // Yeni sahneyi yï¿½kleme iï¿½lemi.
+        // ï¿½rneï¿½in: SceneManager.LoadScene("NextLevelSceneName");
     }
 }
