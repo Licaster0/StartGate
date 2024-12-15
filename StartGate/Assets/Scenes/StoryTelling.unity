@@ -290,6 +290,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 745519537981066286, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1327666495384762942, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
       propertyPath: m_Name
       value: GameMusic
@@ -1291,7 +1295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: typingSpeed
-      value: 0
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: textComponent
