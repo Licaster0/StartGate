@@ -10,6 +10,11 @@ public class PhonesManager : MonoBehaviour
     [SerializeField] private int scenePaperCount;
     [SerializeField] private bool canFinish;
     [SerializeField] private bool Check = false;
+    [SerializeField] private GameObject NumberBox;
+    [SerializeField] private GameObject Number1;
+    [SerializeField] private GameObject Number2;
+    [SerializeField] private GameObject Number3;
+    [SerializeField] private GameObject Number4;
     private void Start()
     {
         canFinish = false;
