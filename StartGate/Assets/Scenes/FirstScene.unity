@@ -1102,6 +1102,7 @@ MonoBehaviour:
   player: {fileID: 8610686032011235852}
   fadeScreen: {fileID: 2117860027}
   text: {fileID: 957375152}
+  nextSceneIndex: 0
 --- !u!4 &759057952
 Transform:
   m_ObjectHideFlags: 0
@@ -1512,6 +1513,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!4 &1162409480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2938191752071186169, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+  m_PrefabInstance: {fileID: 8610686032011235844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1252487306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,6 +2783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2938191752071186169, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3525004633351483004, guid: 8713681159843544fb223c12cf6173bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.43
@@ -2821,6 +2831,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 957375152}
+    - target: {fileID: 4294935184348111688, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: bookTransform
+      value: 
+      objectReference: {fileID: 1162409480}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
