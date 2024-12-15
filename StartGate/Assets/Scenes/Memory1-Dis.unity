@@ -9861,7 +9861,7 @@ MonoBehaviour:
   player: {fileID: 412670755}
   fadeScreen: {fileID: 990165024}
   text: {fileID: 1723119611}
-  nextSceneIndex: 2
+  nextSceneIndex: 5
 --- !u!4 &1849065071
 Transform:
   m_ObjectHideFlags: 0
