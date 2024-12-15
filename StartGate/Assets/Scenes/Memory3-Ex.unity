@@ -1378,7 +1378,7 @@ Transform:
   m_GameObject: {fileID: 544966312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5069,10 +5069,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 745519537981066286, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: a86d805e159ac9b43ad884fe0e34bd72, type: 3}
     - target: {fileID: 1327666495384762942, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
       propertyPath: m_Name
       value: GameMusic
