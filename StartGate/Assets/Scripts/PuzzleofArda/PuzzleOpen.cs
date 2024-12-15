@@ -24,7 +24,7 @@ public class PuzzleOpen : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.Instance.text.text = "";
+            GameManager.Instance.text.text = " ";
             isPuzzleOpen = false;
         }
     }

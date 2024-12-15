@@ -548,7 +548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c21dec3f1118e7c4e92c9fa1735ccf57, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12c0bbd5abd3b3544b6a978588d7d931, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1242,48 +1242,54 @@ PrefabInstance:
       objectReference: {fileID: 743284299}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.size
-      value: 19
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Benim adim Zumra.
+      value: "Bir suredir is\u0327im yu\u0308zu\u0308nden sevgilime yeterince zaman
+        ayiramiyordum."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: Annem bana ananesinin ismini vermis.
+      value: "Yog\u0306un tempom ve su\u0308rekli kos\u0327turmacam, aramizdaki iletis\u0327imi
+        zayiflatmisti ve ben bu durumdan giderek daha fazla rahatsiz oluyordum."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Ismim, zerafeti ve gecmise dair degerli hatiralari simgeliyor.
+      value: "Bir gu\u0308n sevgilim benden telefon s\u0327ifremi istedi."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: Bugune kadar cok guzel bir hayatim olmadi ve bunda benim payim var.
+      value: "O anlik sinir ve o\u0308fkeyle, tamamen tepki olarak s\u0327ifremi
+        vermek istemedim."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: Bir katil veya hirsiz degilim,
+      value: Sadece o an, ona karsi bir sinir koymak ve kendimi savunmak istedim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: Ama gecmisim beni urkutecek derece karanlik...
+      value: Ama bu tavrim, aramizdaki gerilimi daha da arttirdi.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[6]
-      value: Ama gecmisim beni urkutecek derece karanlik...
+      value: "Zaten uzun zamandir birbirimize zaman ayiramadigimiz ic\u0327in, bu
+        ku\u0308c\u0327u\u0308k s\u0327ey de bardagi tas\u0327iran son damla oldu."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[7]
-      value: Bu sucluluk duygusunu ustumden atamiyorum, Allah kahretsin!
+      value: "O an, duygularimin beni nasil yo\u0308nlendirdig\u0306ini ve yanlis\u0327
+        anlas\u0327ilmalara neden oldug\u0306unu fark ettim."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[8]
-      value: Belki bir yolu vardi,
+      value: "Simdi, o an s\u0327ifremi paylas\u0327mam gerektig\u0306ini ve bu kadar
+        ku\u0308c\u0327u\u0308k bir konuda bile aramizdaki gu\u0308veni zedelememem
+        gerektig\u0306ini anliyorum."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[9]
-      value: Belki icimde bulundugum karanliktan cikmam icin bir kapiyi acmam yeterliydi,
-        kim bilir...
+      value: "Bu hatayi yaptig\u0306im ic\u0327in gerc\u0327ekten pis\u0327manim."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[10]
