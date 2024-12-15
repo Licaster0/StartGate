@@ -1303,7 +1303,7 @@ PrefabInstance:
       objectReference: {fileID: 743284299}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.size
-      value: 19
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
@@ -1331,54 +1331,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[6]
-      value: Ama gecmisim beni urkutecek derece karanlik...
-      objectReference: {fileID: 0}
-    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[7]
       value: Bu sucluluk duygusunu ustumden atamiyorum, Allah kahretsin!
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[8]
+      propertyPath: dialogues.Array.data[7]
       value: Belki bir yolu vardi,
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[9]
+      propertyPath: dialogues.Array.data[8]
       value: Belki icimde bulundugum karanliktan cikmam icin bir kapiyi acmam yeterliydi,
         kim bilir...
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[10]
+      propertyPath: dialogues.Array.data[9]
       value: Bazen uyuyamadigim gecelerin sabahi balkona cikiyorum.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[11]
+      propertyPath: dialogues.Array.data[10]
       value: Bir yavru kusu ve annesini oterken goruyorum.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[12]
+      propertyPath: dialogues.Array.data[11]
       value: Bu benim icin azaplarin en buyugu oluveriyor birden.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[13]
+      propertyPath: dialogues.Array.data[12]
       value: Keske, anne, senin istedigin gibi biri olabilseydim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[14]
+      propertyPath: dialogues.Array.data[13]
       value: Eski sevgilim, keske sana gereken vakti ve ilgiyi verebilseydim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
-      propertyPath: dialogues.Array.data[15]
+      propertyPath: dialogues.Array.data[14]
       value: 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak
         yenmeseydim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
+      propertyPath: dialogues.Array.data[15]
+      value: "Keske, keske, keske\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[16]
-      value: 3. siniftaki sira arkadasim, keske okul turnuvasinda seni hile yaparak
-        yenmeseydim.
+      value: Ama belki bir yolu hala vardir?
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[17]
-      value: "Keske, keske, keske\u2026"
+      value: Ama belki bir yolu hala vardir?
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[18]
