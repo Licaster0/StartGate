@@ -10,6 +10,8 @@ public class LampCollScript : MonoBehaviour
     [SerializeField] GameObject dot1;
     [SerializeField] GameObject dot2;
     [SerializeField] bool Check = false;
+
+    [SerializeField] GameObject puzzleOpen;
     private void Start()
     {
         Lamp.SetActive(false);
@@ -20,10 +22,8 @@ public class LampCollScript : MonoBehaviour
     {
         if (Check)
         {
-            Debug.Log("31");
             Check = false;
-            StartCoroutine(Delay());
-
+            puzzleOpen.SetActive(true);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
