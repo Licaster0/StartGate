@@ -7,15 +7,10 @@ using UnityEngine.SceneManagement;
 public class OldPicture : MonoBehaviour, ICollectable
 {
     public TMP_Text m_Text;
-    int x = 0;
     public void Collect()
     {
-        if (x != 0)
-            return;
-
         m_Text.text = "Sevgilim seni ihmal etmemeliydim...";
         StartCoroutine(enumerator());
-        x++;
     }
     private IEnumerator enumerator()
     {

@@ -7,15 +7,10 @@ using UnityEngine.SceneManagement;
 public class Brush : MonoBehaviour, ICollectable
 {
     public TMP_Text m_Text;
-    int x = 0;
     public void Collect()
     {
-        if (x != 0)
-            return;
-
         m_Text.text = "Annecim burda seninde dis fircan olurdu";
         StartCoroutine(enumerator());
-        x++;
     }
     private IEnumerator enumerator()
     {
