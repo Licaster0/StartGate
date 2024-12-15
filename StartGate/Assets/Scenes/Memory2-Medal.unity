@@ -363,7 +363,7 @@ MonoBehaviour:
   dot1: {fileID: 725102731}
   dot2: {fileID: 1276907156}
   Check: 0
-  puzzleOpen: {fileID: 0}
+  puzzleOpen: {fileID: 808025225}
 --- !u!61 &160241697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1578,6 +1578,11 @@ Transform:
   - {fileID: 1567615559}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &808025225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3387168243876615150, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+  m_PrefabInstance: {fileID: 1341529932}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &850934149
 GameObject:
   m_ObjectHideFlags: 0
@@ -7874,22 +7879,7 @@ PrefabInstance:
     - {fileID: 9107448592610332228, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
     - {fileID: 967424334605342866, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3965902796395702798, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6918509484470477450, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6972705542437809014, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4438561075538356149, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7393851505133223376, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
 --- !u!1001 &1413750836
 PrefabInstance:
@@ -9518,6 +9508,7 @@ SceneRoots:
   - {fileID: 510715524}
   - {fileID: 952411594}
   - {fileID: 2063165294}
+  - {fileID: 1341529932}
   - {fileID: 1067454209}
   - {fileID: 293492716}
   - {fileID: 969649734}
@@ -9527,4 +9518,3 @@ SceneRoots:
   - {fileID: 566580160}
   - {fileID: 334217074}
   - {fileID: 1413750836}
-  - {fileID: 1341529932}
