@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerImpact : MonoBehaviour
 {
+    int x = 0;
     public TextMeshProUGUI text;
     private ICollectable currentCollectable;
     public GameObject memoryBookPrefab;
@@ -24,11 +25,11 @@ public class PlayerImpact : MonoBehaviour
         if (Icollectable != null)
         {
             currentCollectable = null;
-            if(text != null)
+            if (text != null)
             {
                 text.enabled = false;
             }
-          
+
 
         }
     }
@@ -39,7 +40,9 @@ public class PlayerImpact : MonoBehaviour
         {
             currentCollectable.Collect();
             GameManager.Instance.fadeScreen.FadeOut();
-            CreateBook();
+            if (x == 0)
+                CreateBook();
+            x++;
         }
     }
 

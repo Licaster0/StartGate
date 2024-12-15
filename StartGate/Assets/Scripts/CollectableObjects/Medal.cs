@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Medal : MonoBehaviour, ICollectable
 {
     public TMP_Text m_Text;
+
     public void Collect()
     {
         m_Text.text = "Bu madalyayi hic haketmemistim";
@@ -13,6 +14,7 @@ public class Medal : MonoBehaviour, ICollectable
     }
     private IEnumerator enumerator()
     {
+
         yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(6);
     }
