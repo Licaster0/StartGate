@@ -61,6 +61,7 @@ public class PhonesManager : MonoBehaviour
             NumberBox.SetActive(true);
             gameObject.GetComponent<PlayerMovementPlatformer>().enabled = false;
             gameObject.GetComponent<GrapplingHook>().enabled = false;
+            gameObject.GetComponent<FootSteps>().enabled = false;
             //collision.gameObject.SetActive(false);
             //Check = true;
             //Destroy(gameObject, 5f);

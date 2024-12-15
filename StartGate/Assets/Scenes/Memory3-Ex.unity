@@ -2075,18 +2075,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.38838196, y: 0}
+  m_Offset: {x: -0.057120144, y: -0.19092995}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.85, y: 3.8}
+    oldSize: {x: 0.51, y: 1.17}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.901248, y: 4.2550626}
+  m_Size: {x: 1.2278012, y: 2.2366638}
   m_EdgeRadius: 0
 --- !u!212 &815894365
 SpriteRenderer:
@@ -2129,7 +2129,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 038c5cb4b1375fb4782bc121d9c65909, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 853f025c82744f64b9101d5d2f3b16d4, type: 3}
   m_Color: {r: 1, g: 0.27735847, b: 0.27735847, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2149,9 +2149,9 @@ Transform:
   m_GameObject: {fileID: 815894363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.26, y: -4.97, z: 0}
-  m_LocalScale: {x: 0.6410546, y: 0.6410546, z: 0.6410546}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 37.44, y: -2.66, z: 0}
+  m_LocalScale: {x: 2.44, y: 2.44, z: 2.44}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1340163561}
   m_Father: {fileID: 0}
@@ -4213,7 +4213,7 @@ Transform:
   m_GameObject: {fileID: 1340163560}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.01, y: 2.67, z: 0}
+  m_LocalPosition: {x: 0.002, y: 0.947, z: 0}
   m_LocalScale: {x: 0.3517, y: 0.3517, z: 0.3517}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5069,6 +5069,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 745519537981066286, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a86d805e159ac9b43ad884fe0e34bd72, type: 3}
     - target: {fileID: 1327666495384762942, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
       propertyPath: m_Name
       value: GameMusic
@@ -6733,7 +6737,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
