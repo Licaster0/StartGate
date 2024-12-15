@@ -12,6 +12,43 @@ public class Canvas : MonoBehaviour
     [SerializeField] private bool isPanelVisible = false;
     public bool isSettingsPanelVisible = false;
     [SerializeField] private CanvasGroup settingsPanel;
+    // CanvasGroup bileþeni referansý
+    private CanvasGroup canvasGroup;
+
+    // Fade süresi
+    [SerializeField] private float fadeDuration0 = 1.5f;
+
+    private void Start()
+    {
+        // CanvasGroup bileþenini al
+        canvasGroup = GetComponent<CanvasGroup>();
+
+        // Baþlangýçta tamamen görünmez yap
+        canvasGroup.alpha = 0f;
+
+        // Fade In baþlat
+        StartCoroutine(FadeInScene());
+    }
+
+    private IEnumerator FadeInScene()
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration0)
+        {
+            // Alpha deðerini zamanla 0'dan 1'e çýkar
+            canvasGroup.alpha = Mathf.Clamp01(elapsedTime / fadeDuration0);
+
+            // Geçen süreyi artýr
+            elapsedTime += Time.deltaTime;
+
+            // Bir frame bekle
+            yield return null;
+        }
+
+        // Fade tamamlandýðýnda alpha deðerini tam görünür olarak ayarla
+        canvasGroup.alpha = 1f;
+    }
     private void Awake()
     {
         if (Instance == null)
