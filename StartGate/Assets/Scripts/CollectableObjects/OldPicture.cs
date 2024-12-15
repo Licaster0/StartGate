@@ -12,9 +12,9 @@ public class OldPicture : MonoBehaviour, ICollectable
         m_Text.text = "Sevgilim seni ihmal etmemeliydim...";
         StartCoroutine(enumerator());
     }
-   private IEnumerator enumerator()
+    private IEnumerator enumerator()
     {
         yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 }
