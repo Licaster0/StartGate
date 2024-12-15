@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PasswordManager : MonoBehaviour
@@ -47,5 +48,6 @@ public class PasswordManager : MonoBehaviour
     {
         // Yeni sahneyi y�kleme i�lemi.
         // �rne�in: SceneManager.LoadScene("NextLevelSceneName");
+        SceneManager.LoadScene(11);
     }
 }

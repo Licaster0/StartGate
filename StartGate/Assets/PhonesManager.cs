@@ -9,6 +9,7 @@ public class PhonesManager : MonoBehaviour
     [SerializeField] private int currentPaper = 0;
     [SerializeField] private int scenePaperCount;
     [SerializeField] private bool canFinish;
+    [SerializeField] public bool sifreDoru;
     [SerializeField] private bool Check = false;
     [SerializeField] private GameObject NumberBox;
     [SerializeField] private GameObject Number1;
@@ -18,6 +19,7 @@ public class PhonesManager : MonoBehaviour
     private void Start()
     {
         canFinish = false;
+        sifreDoru = false;
     }
     private void Update()
     {
@@ -33,6 +35,22 @@ public class PhonesManager : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             currentPaper++;
+            if (currentPaper == 1)
+            {
+                Number1.SetActive(true);
+            }
+            else if (currentPaper == 2)
+            {
+                Number2.SetActive(true);
+            }
+            else if (currentPaper == 3)
+            {
+                Number3.SetActive(true);
+            }
+            else if (currentPaper == 4)
+            {
+                Number4.SetActive(true);
+            }
             if (currentPaper == scenePaperCount)
             {
                 canFinish = true;
@@ -40,9 +58,12 @@ public class PhonesManager : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Finishh") && canFinish)
         {
-            collision.gameObject.SetActive(false);
-            Check = true;
-            Destroy(gameObject, 5f);
+            NumberBox.SetActive(true);
+            gameObject.GetComponent<PlayerMovementPlatformer>().enabled = false;
+            gameObject.GetComponent<GrapplingHook>().enabled = false;
+            //collision.gameObject.SetActive(false);
+            //Check = true;
+            //Destroy(gameObject, 5f);
             //gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
