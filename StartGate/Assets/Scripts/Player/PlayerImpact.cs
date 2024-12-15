@@ -27,7 +27,7 @@ public class PlayerImpact : MonoBehaviour
             currentCollectable = null;
             if (text != null)
             {
-                text.enabled = false;
+                text.text = "";
             }
 
 
