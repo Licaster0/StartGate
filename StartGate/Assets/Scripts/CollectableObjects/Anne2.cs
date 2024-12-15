@@ -46,7 +46,7 @@ public class Anne2 : MonoBehaviour
     {
         dialogueText.text = "Annecim";
         yield return new WaitForSeconds(1f);
-        dialogueText.text = "Nasılsın";
+        dialogueText.text = "Nasilsin";
         yield return new WaitForSeconds(1f);
         dialogueText.text = "Yapmami istedigin birsey varmiiii:)";
         yield return new WaitForSeconds(1f);
