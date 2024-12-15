@@ -1146,7 +1146,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 94.79999}
-  m_SizeDelta: {x: 222.85, y: 67.650024}
+  m_SizeDelta: {x: 140.18, y: 67.65}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &743906530
 MonoBehaviour:
@@ -1628,7 +1628,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 235.74501}
-  m_SizeDelta: {x: -423.7, y: -872.58}
+  m_SizeDelta: {x: -369.53, y: -872.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273469463
 MonoBehaviour:
@@ -1725,9 +1725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Credits
-
-'
+  m_text: Jenerik
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2094,7 +2092,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -204.29999}
-  m_SizeDelta: {x: 222.85, y: 67.65}
+  m_SizeDelta: {x: 276.1, y: 67.65}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1468130215
 MonoBehaviour:
@@ -2596,7 +2594,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -345.245}
-  m_SizeDelta: {x: -416.83997, y: -872.04}
+  m_SizeDelta: {x: -503.5, y: -872.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140593946
 MonoBehaviour:
