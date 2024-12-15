@@ -26,11 +26,7 @@ public class OldPicture : MonoBehaviour, ICollectable
     private IEnumerator enumerator()
     {
         yield return new WaitForSeconds(2.5f);
-<<<<<<< HEAD
-        
-        SceneManager.LoadScene(7);
-=======
         SceneManager.LoadScene(9);
->>>>>>> 8e231ec183b69ca9912a8c54754eac022e820287
+
     }
 }

@@ -24,11 +24,7 @@ public class Medal : MonoBehaviour, ICollectable
     private IEnumerator enumerator()
     {
         yield return new WaitForSeconds(2.5f);
-<<<<<<< HEAD
-        
-        SceneManager.LoadScene(5);
-=======
         SceneManager.LoadScene(6);
->>>>>>> 8e231ec183b69ca9912a8c54754eac022e820287
+
     }
 }
