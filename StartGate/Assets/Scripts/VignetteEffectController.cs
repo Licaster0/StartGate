@@ -37,6 +37,7 @@ public class VignetteEffectController : MonoBehaviour
             
         }
         SceneManager.LoadScene(0);
+
         // Son deðeri garantiye al
         vignette.intensity.Override(endValue);
     }

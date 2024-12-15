@@ -6,6 +6,7 @@ public class IntroVideoController : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Video Player bileþeni
     public GameObject canvas;       // Canvas objesi
+    public GameObject MenuObject;
 
     void Start()
     {
@@ -18,5 +19,6 @@ public class IntroVideoController : MonoBehaviour
     {
         // Video bittiðinde Canvas'ý devre dýþý býrak
         canvas.SetActive(false);
+        MenuObject.SetActive(true);
     }
 }
