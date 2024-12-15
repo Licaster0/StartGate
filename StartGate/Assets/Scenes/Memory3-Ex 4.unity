@@ -1469,6 +1469,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 745519537981066286, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1327666495384762942, guid: 5b995dc04740a644d80ba613bf1a5e13, type: 3}
       propertyPath: m_Name
       value: GameMusic
@@ -4696,7 +4700,13 @@ MonoBehaviour:
   currentPaper: 0
   scenePaperCount: 3
   canFinish: 0
+  sifreDoru: 0
   Check: 0
+  NumberBox: {fileID: 0}
+  Number1: {fileID: 0}
+  Number2: {fileID: 0}
+  Number3: {fileID: 0}
+  Number4: {fileID: 0}
 --- !u!4 &1245767523419537795
 Transform:
   m_ObjectHideFlags: 0
