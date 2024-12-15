@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,12 +8,14 @@ public class PuzzleOpen : MonoBehaviour
     [SerializeField] private GameObject puzzle;
     [SerializeField] private LekeParts lekeParts;
     private bool isPuzzleOpen = false;
+    [SerializeField] private GameObject Tringle;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && lekeParts.cleanedLekes >= lekeParts.totalLekes)
         {
             GameManager.Instance.text.text = "Puzzle'ı Açmak İçin E Tuşuna Bas!";
             isPuzzleOpen = true;
+            Tringle.SetActive(true);
         }
     }
 
