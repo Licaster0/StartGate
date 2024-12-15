@@ -14,7 +14,6 @@ public class Medal : MonoBehaviour, ICollectable
     }
     private IEnumerator enumerator()
     {
-
         yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(6);
     }
