@@ -60,7 +60,7 @@ public class PuzzleManager : MonoBehaviour
             GameManager.Instance.CreateBook();
             GameManager.Instance.player.moveSpeed = 5;
             GameManager.Instance.text.text = "Puzzle Solved! Gate is open!";
-            puzzle.SetActive(false);
+            Destroy(puzzle);
         }
     }
 }

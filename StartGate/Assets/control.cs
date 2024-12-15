@@ -5,8 +5,8 @@ using UnityEngine;
 public class control : MonoBehaviour
 {
     public GameObject puzzle;
-    private bool isPussleSolved;
-    private bool isBookOpen;
+    [SerializeField] private bool isPussleSolved;
+    [SerializeField] private bool isBookOpen;
     public GameObject k1;
     public GameObject k2;
     public GameObject k3;
@@ -27,9 +27,10 @@ public class control : MonoBehaviour
     public Transform k9pos;
     void Update()
     {
-        if (!isPussleSolved && k1.transform.position == k1pos.position && k2.transform.position == k2pos.position && k3.transform.position == k3pos.position && k4.transform.position == k4pos.position && k5.transform.position == k5pos.position && k6.transform.position == k6pos.position && k7.transform.position == k7pos.position && k8.transform.position == k8pos.position && k9.transform.position == k9pos.position)
+        if (k1.transform.position == k1pos.position && k2.transform.position == k2pos.position && k3.transform.position == k3pos.position && k4.transform.position == k4pos.position && k5.transform.position == k5pos.position && k6.transform.position == k6pos.position && k7.transform.position == k7pos.position && k8.transform.position == k8pos.position && k9.transform.position == k9pos.position)
         {
             isPussleSolved = true;
+            Debug.Log("Puzzle Solved!");
         }
 
         if (isPussleSolved && !isBookOpen)

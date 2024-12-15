@@ -222,9 +222,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1050238872842911551, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050238872842911551, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909162923666983839, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909162923666983839, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3387168243876615150, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_Name
       value: Puzzle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496280718208535600, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496280718208535600, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910408509189766224, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910408509189766224, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6571719971571670229, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -264,6 +296,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6571719971571670229, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899939851044246526, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899939851044246526, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230733022477897895, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230733022477897895, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330658300251911023, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330658300251911023, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138259167498751163, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138259167498751163, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138293671683765002, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138293671683765002, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      propertyPath: trembleAmount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
