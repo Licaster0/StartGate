@@ -1303,32 +1303,33 @@ PrefabInstance:
       objectReference: {fileID: 743284299}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.size
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Bir sabah, annem bana 'Yerlere Vileda yap' demisti.
+      value: Bir sabah annem bana "Yerlere vileda yap" demisti.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: O an isim oldugu icin 'Aksama yaparim' diye gecistirdim
+      value: Ancak ben, o an baska seylerle mesguldum ve "Aksama yaparim" diyerek
+        gecistirdim.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Ancak o kadar yogunlastim ki, zamanla bunu tamamen unuttum.
+      value: Aksam olmasina ragmen hala yapmamistim, unuttum ve erteliyordum.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: O gun aksam geldiginde, annemin beni hatirlatmasi uzerine,
+      value: "O g\xFCn, annem yere kayip dustu. O dusus, cok buyuk bir yara acti...
+        ve annemi kaybettim."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: Hic yapmadigimi fark ettim ve icimde buyuk bir pismanlik hissettim.
+      value: Basit bir isin annemin kaybina nasil yol actigini dusunuyorum.
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: Annemin o anki kalp kirikligini gormek, beni derinden uzdu ve o gunu
-        asla unutamadim.
+      value: Keske birseyleri degistirebilsem
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[6]
