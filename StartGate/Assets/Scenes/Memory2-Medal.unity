@@ -477,6 +477,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7149073441373677822, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149073441373677822, guid: 8713681159843544fb223c12cf6173bf, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7471189357815528752, guid: 8713681159843544fb223c12cf6173bf, type: 3}
       propertyPath: dustFx
       value: 
@@ -8075,22 +8083,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6571719971571670229, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1182276796}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3965902796395702798, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6918509484470477450, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6972705542437809014, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4438561075538356149, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7393851505133223376, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
 --- !u!1001 &1413750836
 PrefabInstance:
