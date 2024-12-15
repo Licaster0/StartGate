@@ -1303,53 +1303,62 @@ PrefabInstance:
       objectReference: {fileID: 743284299}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.size
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Bir sabah, annem bana 'Yerlere Vileda yap' demisti.
+      value: "Bir sabah annem bana \"Yerlere vileda yap\" demi\u015Fti. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: O an isim oldugu icin 'Aksama yaparim' diye gecistirdim
+      value: "Ancak ben, o an ba\u015Fka \u015Feylerle me\u015Fguld\xFCm ve \"Ak\u015Fama
+        yapar\u0131m\" diyerek ge\xE7i\u015Ftirdim. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Ancak o kadar yogunlastim ki, zamanla bunu tamamen unuttum.
+      value: " Ak\u015Fam olmas\u0131na ra\u011Fmen hala yapmam\u0131\u015Ft\u0131m,
+        unuttum ve erteliyordum. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: O gun aksam geldiginde, annemin beni hatirlatmasi uzerine,
+      value: "Annem yerleri temizlememi birka\xE7 kez hat\u0131rlatt\u0131 ama ben
+        yine yapmad\u0131m. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: Hic yapmadigimi fark ettim ve icimde buyuk bir pismanlik hissettim.
+      value: "O g\xFCn, annem yere kay\u0131p d\xFC\u015Ft\xFC. O d\xFC\u015F\xFC\u015F,
+        \xE7ok b\xFCy\xFCk bir yara a\xE7t\u0131 ve sa\u011Fl\u0131k durumu h\u0131zla
+        k\xF6t\xFCle\u015Fti. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: Annemin o anki kalp kirikligini gormek, beni derinden uzdu ve o gunu
-        asla unutamadim.
+      value: "Hastaneye kald\u0131r\u0131ld\u0131\u011F\u0131nda, durumunun ciddiyetini
+        fark ettim ama \xE7ok ge\xE7ti. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[6]
-      value: O zamanlar ne kadar basit bir is gibi gorunduyse de,
+      value: "Annemin vefat\u0131, beni derinden sarst\u0131."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[7]
-      value: Annemin kalbini kirdigim o an, aradan yillar gecse de hafizamda silinmedi.
+      value: "O g\xFCn, basit bir \u015Fekilde yerleri temizlememek, annemin kayb\u0131na
+        yol a\xE7t\u0131 gibi hissediyorum. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[8]
-      value: O gunden sonra, her ne kadar hayatimda daha guzel ve mutlu anlar olsa
-        da,
+      value: "O an\u0131 ve pi\u015Fmanl\u0131\u011F\u0131m\u0131 asla unutam\u0131yorum."
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[9]
-      value: O gunu ve annemin uzuldugu ani hep hatirladim.
+      value: "\u015Eimdi, her g\xFCn banyoyu bile dikkatle vileda yaparak, o hatam\u0131
+        telafi etmeye \xE7al\u0131\u015F\u0131yorum.  "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[10]
-      value: Bazen uyuyamadigim gecelerin sabahi balkona cikiyorum.
+      value: "Her temizlik hareketimde, o g\xFCn\xFCn pi\u015Fmanl\u0131\u011F\u0131n\u0131
+        ve kayb\u0131n\u0131 hat\u0131rl\u0131yorum, ama bir yandan da k\xFC\xE7\xFCk
+        bir \u015Feyin ne kadar b\xFCy\xFCk sonu\xE7lar do\u011Furabilece\u011Fini
+        \xF6\u011Frenmi\u015F oluyorum. "
       objectReference: {fileID: 0}
     - target: {fileID: 5955783838062334227, guid: 6402f4e6bd807444d86dc984e440fdac, type: 3}
       propertyPath: dialogues.Array.data[11]
