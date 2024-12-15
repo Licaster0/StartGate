@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StoryTellingLast.unity
     guid: 20e1ffa961d0f544ebaba1f3456e69f1
+  - enabled: 1
+    path: Assets/Scenes/MainScreenLast.unity
+    guid: f921b7c19cb44c44c9193d489523bcd1
   m_configObjects: {}
