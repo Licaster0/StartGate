@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class OldPicture : MonoBehaviour, ICollectable
 {
     public TMP_Text m_Text;
-    private bool m_IsPlaying = false;
     public void Collect()
     {
         m_Text.text = "Sevgilim seni ihmal etmemeliydim...";
