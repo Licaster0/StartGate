@@ -10,18 +10,8 @@ public class OldPicture : MonoBehaviour, ICollectable
     private bool m_IsPlaying = false;
     public void Collect()
     {
-        if (!m_IsPlaying)
-        {
-            m_Text.text = "Sevgilim seni ihmal etmemeliydim...";
-
-            StartCoroutine(enumerator());
-            m_IsPlaying = true;
-        }
-        else
-        {
-            m_Text.text = "Hatani anlayip duzelttin";
-        }
-       
+        m_Text.text = "Sevgilim seni ihmal etmemeliydim...";
+        StartCoroutine(enumerator());
     }
     private IEnumerator enumerator()
     {

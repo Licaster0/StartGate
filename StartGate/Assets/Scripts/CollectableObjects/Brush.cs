@@ -7,24 +7,15 @@ using UnityEngine.SceneManagement;
 public class Brush : MonoBehaviour, ICollectable
 {
     public TMP_Text m_Text;
-    private bool m_IsPlaying = false;
     public void Collect()
     {
-        if (!m_IsPlaying)
-        {
-            m_Text.text = "Annecim burda seninde dis fircan olurdu";
-            StartCoroutine(enumerator());
-            m_IsPlaying = true;
-        }
-        else
-        {
-            m_Text.text = "Hatani anlayip duzelttin";
-        }
+        m_Text.text = "Annecim burda seninde dis fircan olurdu";
+        StartCoroutine(enumerator());
     }
     private IEnumerator enumerator()
     {
         yield return new WaitForSeconds(2.5f);
-       
+
         SceneManager.LoadScene(3);
 
     }

@@ -7,13 +7,15 @@ public class Anne2 : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueText;
     bool isInteracted = false;
+    public bool isPlaying = false;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isInteracted)
+        if (Input.GetKeyDown(KeyCode.E) && isInteracted && !isPlaying)
         {
             Collect();
             isInteracted = false;
+            isPlaying = true;
         }
     }
 

@@ -8,6 +8,7 @@ public class PlayerImpact : MonoBehaviour
     private ICollectable currentCollectable;
     public GameObject memoryBookPrefab;
     [SerializeField] private Transform bookTransform;
+    [SerializeField] private GameObject anne;
     private void OnTriggerEnter2D(Collider2D col)
     {
         ICollectable Icollectable = col.GetComponent<ICollectable>();
