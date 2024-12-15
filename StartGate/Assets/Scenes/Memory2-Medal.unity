@@ -7654,7 +7654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3387168243876615150, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3668342758376386558, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7746,11 +7746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942844812770733337, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.65
+      value: -5.4
       objectReference: {fileID: 0}
     - target: {fileID: 6942844812770733337, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.24
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7124011914250853140, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
       propertyPath: m_text
@@ -7879,7 +7879,22 @@ PrefabInstance:
     - {fileID: 9107448592610332228, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
     - {fileID: 967424334605342866, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3965902796395702798, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6918509484470477450, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6972705542437809014, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4438561075538356149, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7393851505133223376, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ed8ff47a6463043a8aaeece7c30d2e1e, type: 3}
 --- !u!1001 &1413750836
 PrefabInstance:
